@@ -27,8 +27,6 @@ class HomeViewController: UIViewController {
         heightConstraint.isActive = true
         widthConstraint.isActive = true
         navigationItem.leftBarButtonItem =  imageItem
-        
-        print("ok")
     }
     
 }
