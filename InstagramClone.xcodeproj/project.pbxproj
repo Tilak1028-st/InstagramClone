@@ -56,15 +56,31 @@
 		8271E8E5285A0439005950B0 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				8271E8E6285A0439005950B0 /* AppDelegate.swift */,
-				8271E8E8285A0439005950B0 /* SceneDelegate.swift */,
-				8271E8EA285A0439005950B0 /* ViewController.swift */,
+				8271E8FA285A0496005950B0 /* Delegate */,
+				8271E8FB285A04B4005950B0 /* ViewController */,
 				8271E8EC285A0439005950B0 /* Main.storyboard */,
 				8271E8EF285A043C005950B0 /* Assets.xcassets */,
 				8271E8F1285A043C005950B0 /* LaunchScreen.storyboard */,
 				8271E8F4285A043C005950B0 /* Info.plist */,
 			);
 			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		8271E8FA285A0496005950B0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8E6285A0439005950B0 /* AppDelegate.swift */,
+				8271E8E8285A0439005950B0 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8271E8FB285A04B4005950B0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8EA285A0439005950B0 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
