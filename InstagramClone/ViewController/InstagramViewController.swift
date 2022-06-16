@@ -13,6 +13,4 @@ class InstagramViewController: UITabBarController {
         super.viewDidLoad()
        
     }
-    
-    
 }

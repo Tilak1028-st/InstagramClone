@@ -66,9 +66,9 @@
 		8271E8E5285A0439005950B0 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				8271E908285A0520005950B0 /* View */,
 				8271E8FA285A0496005950B0 /* Delegate */,
 				8271E8FB285A04B4005950B0 /* ViewController */,
+				8271E908285A0520005950B0 /* View */,
 				8271E8EF285A043C005950B0 /* Assets.xcassets */,
 				8271E8F4285A043C005950B0 /* Info.plist */,
 			);
@@ -87,12 +87,12 @@
 		8271E8FB285A04B4005950B0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8271E8FD285A0503005950B0 /* ActivityViewController.swift */,
-				8271E8FC285A0503005950B0 /* HomeViewController.swift */,
 				8271E901285A0503005950B0 /* InstagramViewController.swift */,
-				8271E8FF285A0503005950B0 /* ProfileViewController.swift */,
-				8271E900285A0503005950B0 /* ReelViewController.swift */,
+				8271E8FC285A0503005950B0 /* HomeViewController.swift */,
 				8271E8FE285A0503005950B0 /* SearchViewController.swift */,
+				8271E900285A0503005950B0 /* ReelViewController.swift */,
+				8271E8FD285A0503005950B0 /* ActivityViewController.swift */,
+				8271E8FF285A0503005950B0 /* ProfileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
