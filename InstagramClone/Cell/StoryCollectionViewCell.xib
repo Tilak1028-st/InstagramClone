@@ -10,17 +10,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="gTV-IL-0wX" customClass="StoryCollectionViewCell" customModule="InstagramClone" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="237" height="132"/>
+            <rect key="frame" x="0.0" y="0.0" width="133" height="124"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="237" height="132"/>
+                <rect key="frame" x="0.0" y="0.0" width="133" height="124"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="icons8-super-mario-90" translatesAutoresizingMaskIntoConstraints="NO" id="JwF-Ye-SKu">
-                        <rect key="frame" x="10" y="10" width="217" height="90"/>
+                        <rect key="frame" x="21.5" y="5" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="8wB-NG-CCI"/>
+                            <constraint firstAttribute="width" constant="90" id="fya-zd-Dhq"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-TL-3wm">
-                        <rect key="frame" x="10" y="110" width="217" height="12"/>
+                        <rect key="frame" x="10" y="100" width="113" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -29,20 +33,18 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="JwF-Ye-SKu" secondAttribute="trailing" constant="10" id="1Kb-07-9q6"/>
-                <constraint firstItem="JwF-Ye-SKu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="4ys-Gi-Ffa"/>
                 <constraint firstItem="U3a-TL-3wm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="7BW-Aj-gLC"/>
-                <constraint firstAttribute="bottom" secondItem="U3a-TL-3wm" secondAttribute="bottom" constant="10" id="ClA-4s-hvx"/>
+                <constraint firstItem="JwF-Ye-SKu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8C5-0V-u0U"/>
+                <constraint firstItem="U3a-TL-3wm" firstAttribute="top" secondItem="JwF-Ye-SKu" secondAttribute="bottom" constant="5" id="APr-5Y-NMH"/>
                 <constraint firstAttribute="trailing" secondItem="U3a-TL-3wm" secondAttribute="trailing" constant="10" id="Vui-Qt-SfH"/>
-                <constraint firstItem="JwF-Ye-SKu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="fdV-3y-h3c"/>
-                <constraint firstItem="U3a-TL-3wm" firstAttribute="top" secondItem="JwF-Ye-SKu" secondAttribute="bottom" constant="10" id="gXP-Nd-MNx"/>
+                <constraint firstItem="JwF-Ye-SKu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="aQQ-YG-jEc"/>
             </constraints>
-            <size key="customSize" width="237" height="132"/>
+            <size key="customSize" width="133" height="124"/>
             <connections>
                 <outlet property="storyDpImgView" destination="JwF-Ye-SKu" id="UF4-AB-Hu2"/>
                 <outlet property="userNameLabel" destination="U3a-TL-3wm" id="poU-8B-28c"/>
             </connections>
-            <point key="canvasLocation" x="151.44927536231884" y="124.55357142857142"/>
+            <point key="canvasLocation" x="76.08695652173914" y="121.875"/>
         </collectionViewCell>
     </objects>
     <resources>
