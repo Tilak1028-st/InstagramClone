@@ -39,10 +39,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2zD-RB-f3H">
-                                <rect key="frame" x="0.0" y="88" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="QKm-5v-wsc"/>
+                                    <constraint firstAttribute="height" constant="130" id="QKm-5v-wsc"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="5" id="PTg-Qw-b2k">
                                     <size key="itemSize" width="128" height="128"/>
@@ -56,13 +56,25 @@
                                     <outlet property="delegate" destination="EP8-2N-t8y" id="7ia-sL-lM0"/>
                                 </connections>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-02-EoF">
+                                <rect key="frame" x="0.0" y="228" width="414" height="585"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EP8-2N-t8y" id="grr-6X-8Ih"/>
+                                    <outlet property="delegate" destination="EP8-2N-t8y" id="dQe-3y-3TF"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I8I-dD-EbU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3BJ-02-EoF" firstAttribute="bottom" secondItem="I8I-dD-EbU" secondAttribute="bottom" id="1G8-P6-4LX"/>
                             <constraint firstItem="2zD-RB-f3H" firstAttribute="trailing" secondItem="I8I-dD-EbU" secondAttribute="trailing" id="AzA-TS-zBz"/>
                             <constraint firstItem="2zD-RB-f3H" firstAttribute="top" secondItem="I8I-dD-EbU" secondAttribute="top" id="PC8-vj-ViB"/>
+                            <constraint firstItem="3BJ-02-EoF" firstAttribute="trailing" secondItem="I8I-dD-EbU" secondAttribute="trailing" id="Rgo-QH-TNj"/>
                             <constraint firstItem="2zD-RB-f3H" firstAttribute="leading" secondItem="I8I-dD-EbU" secondAttribute="leading" id="XD2-5S-mRh"/>
+                            <constraint firstItem="3BJ-02-EoF" firstAttribute="leading" secondItem="I8I-dD-EbU" secondAttribute="leading" id="dhZ-qb-pRu"/>
+                            <constraint firstItem="3BJ-02-EoF" firstAttribute="top" secondItem="2zD-RB-f3H" secondAttribute="bottom" constant="10" id="hd3-WO-MTD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="house" catalog="system" selectedImage="house.fill" id="CEr-kH-DtR"/>
@@ -77,6 +89,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="feedTableView" destination="3BJ-02-EoF" id="lfF-Oo-UFi"/>
                         <outlet property="storyCollectionView" destination="2zD-RB-f3H" id="PHX-jg-d4m"/>
                     </connections>
                 </viewController>

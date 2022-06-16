@@ -16,7 +16,7 @@ class StoryCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.storyDpImgView.layer.borderWidth = 1
         self.storyDpImgView.layer.borderColor = UIColor.gray.cgColor
-        self.storyDpImgView.layer.cornerRadius = self.storyDpImgView.frame.size.width / 5
+        self.storyDpImgView.layer.cornerRadius = self.storyDpImgView.frame.size.width / 2
         self.userNameLabel.text = "Username"
     }
 

@@ -10,13 +10,27 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var storyCollectionView: UICollectionView!
-    
+    @IBOutlet weak var feedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addLeftBarIcon(named: "Instagram_logo.svg")
-        
+
         storyCollectionView.register(UINib.init(nibName: Constant.storyCollectionCell, bundle: nil), forCellWithReuseIdentifier: Constant.storyCollectionCell)
+        tableConfiguration()
+    }
+    
+//MARK: - Function for FeedTableView SetUp.
+    
+    func tableConfiguration()
+    {
+        feedTableView.register(UINib.init(nibName: Constant.feedTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.feedTableViewCell)
+   
+        self.feedTableView.separatorColor = UIColor.clear
+        let dummyViewHeight = CGFloat(40)
+        
+        self.feedTableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.feedTableView.bounds.size.width, height: dummyViewHeight))
+        self.feedTableView.contentInset = UIEdgeInsets(top: -dummyViewHeight, left: 0, bottom: 0, right: 0)
     }
     
     
@@ -36,6 +50,7 @@ class HomeViewController: UIViewController {
     
 }
 
+// MARK: - Extension for CollectionView Delegate and Datasource methods.
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource
 {
@@ -52,6 +67,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return item
     }
 }
+
+// MARK: - Extension for CollectionView Delegate Flowlayout.
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout
 {
@@ -70,4 +87,50 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout
         return 0
     }
     
+}
+
+// MARK: - Extension for TableView delegate and Datasource methods.
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource
+{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedTableViewCell, for: indexPath) as! FeedTableViewCell
+        cell.growingCellDelegate = self
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+        let headerView = Bundle.main.loadNibNamed(Constant.feedHeadercell, owner: self, options: nil)?.first
+        return headerView as? UIView
+        
+    }
+}
+
+extension HomeViewController: GrowingCellProtocol {
+    
+    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView) {
+        let size = textView.bounds.size
+        let newSize = feedTableView.sizeThatFits(CGSize(width: size.width,
+                                                         height: CGFloat.greatestFiniteMagnitude))
+        if size.height != newSize.height {
+            UIView.setAnimationsEnabled(false)
+            feedTableView?.beginUpdates()
+            feedTableView?.endUpdates()
+            UIView.setAnimationsEnabled(true)
+            if let thisIndexPath = feedTableView.indexPath(for: cell) {
+                feedTableView.scrollToRow(at: thisIndexPath, at: .bottom, animated: false)
+            }
+        }
+    }
 }

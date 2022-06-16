@@ -21,6 +21,10 @@
 		827E95C3285ADDA500BAEC4C /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95C1285ADDA500BAEC4C /* StoryCollectionViewCell.swift */; };
 		827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */; };
 		827E95C7285ADED300BAEC4C /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95C6285ADED300BAEC4C /* StringConstant.swift */; };
+		827E95CA285AF6B000BAEC4C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95C8285AF6B000BAEC4C /* FeedTableViewCell.swift */; };
+		827E95CB285AF6B000BAEC4C /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95C9285AF6B000BAEC4C /* FeedTableViewCell.xib */; };
+		827E95CE285B01C000BAEC4C /* FeedHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */; };
+		827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		827E95C1285ADDA500BAEC4C /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		827E95C6285ADED300BAEC4C /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
+		827E95C8285AF6B000BAEC4C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		827E95C9285AF6B000BAEC4C /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 			children = (
 				827E95C1285ADDA500BAEC4C /* StoryCollectionViewCell.swift */,
 				827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */,
+				827E95C8285AF6B000BAEC4C /* FeedTableViewCell.swift */,
+				827E95C9285AF6B000BAEC4C /* FeedTableViewCell.xib */,
+				827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */,
+				827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -189,7 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */,
 				827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */,
+				827E95CB285AF6B000BAEC4C /* FeedTableViewCell.xib in Resources */,
 				8271E8F3285A043C005950B0 /* LaunchScreen.storyboard in Resources */,
 				8271E8F0285A043C005950B0 /* Assets.xcassets in Resources */,
 				8271E8EE285A0439005950B0 /* Main.storyboard in Resources */,
@@ -211,8 +225,10 @@
 				827E95C3285ADDA500BAEC4C /* StoryCollectionViewCell.swift in Sources */,
 				8271E905285A0503005950B0 /* ProfileViewController.swift in Sources */,
 				8271E907285A0503005950B0 /* InstagramViewController.swift in Sources */,
+				827E95CE285B01C000BAEC4C /* FeedHeaderTableViewCell.swift in Sources */,
 				8271E903285A0503005950B0 /* ActivityViewController.swift in Sources */,
 				8271E902285A0503005950B0 /* HomeViewController.swift in Sources */,
+				827E95CA285AF6B000BAEC4C /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
