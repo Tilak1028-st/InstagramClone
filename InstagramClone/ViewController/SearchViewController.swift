@@ -29,7 +29,11 @@ class SearchViewController: UIViewController {
                 widthDimension: .fractionalWidth(2/3),
                 heightDimension: .fractionalHeight(1)))
         
-        item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        item.contentInsets = NSDirectionalEdgeInsets(
+            top: 2,
+            leading: 2,
+            bottom: 2,
+            trailing: 2)
         
         //Vertical Items
         let verticalStackItem = NSCollectionLayoutItem(
@@ -37,7 +41,11 @@ class SearchViewController: UIViewController {
                 widthDimension: .fractionalWidth(1),
                 heightDimension: .fractionalHeight(0.5)))
         
-        verticalStackItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        verticalStackItem.contentInsets = NSDirectionalEdgeInsets(
+            top: 2,
+            leading: 2,
+            bottom: 2,
+            trailing: 2)
         
         //VerticalGroup
         let VerticalStackGroup = NSCollectionLayoutGroup.vertical(
@@ -50,11 +58,23 @@ class SearchViewController: UIViewController {
         
         //Triplet Item
         
-        let tripletItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1)))
+        let tripletItem = NSCollectionLayoutItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalWidth(1)))
         
-        tripletItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        tripletItem.contentInsets = NSDirectionalEdgeInsets(
+            top: 2,
+            leading: 2,
+            bottom: 2,
+            trailing: 2)
         
-        let tripletHorizontalGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.3)), subitem: tripletItem, count: 3)
+        let tripletHorizontalGroup = NSCollectionLayoutGroup.horizontal(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalWidth(0.3)),
+            subitem: tripletItem,
+            count: 3)
        
         
         //Group
@@ -65,7 +85,11 @@ class SearchViewController: UIViewController {
             subitems: [item, VerticalStackGroup])
        
         
-        let verticalGroup = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1.0)), subitems: [horizontalGroup, tripletHorizontalGroup])
+        let verticalGroup = NSCollectionLayoutGroup.vertical(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalWidth(1.0)),
+            subitems: [horizontalGroup, tripletHorizontalGroup])
         
         
         //Section
