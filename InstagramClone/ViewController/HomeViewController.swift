@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
         self.feedTableView.contentInset = UIEdgeInsets(top: -dummyViewHeight, left: 0, bottom: 0, right: 0)
     }
     
+// MARK:  - Function left Navigationbar item.
     
     func addLeftBarIcon(named:String)
     {
@@ -116,6 +117,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
         
     }
 }
+
+//MARK: - Extension for growing textview height as new text entered.
 
 extension HomeViewController: GrowingCellProtocol {
     
