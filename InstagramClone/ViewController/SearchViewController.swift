@@ -21,6 +21,8 @@ class SearchViewController: UIViewController {
         collectionView.collectionViewLayout = SearchViewController.createlayout()
     }
     
+//MARK: - CompotionalLayout Function.
+    
     static func createlayout() -> UICollectionViewCompositionalLayout {
         
         //Items
@@ -99,6 +101,8 @@ class SearchViewController: UIViewController {
     }
 }
 
+//MARK: - Extension for CollectionView Delegate and DataSource methods.
+
 extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -110,6 +114,4 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: Constant.searchCollectionViewCell, for: indexPath) as! SearchCollectionViewCell
         return item
     }
-    
-    
 }

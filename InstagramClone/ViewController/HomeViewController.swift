@@ -80,11 +80,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout
         return CGSize(width: collectionWidth/4, height: collectionHeight)
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
+    {
         return 0
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
         return 0
     }
     
@@ -94,7 +96,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 {
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
         1
     }
     
@@ -122,7 +125,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 
 extension HomeViewController: GrowingCellProtocol {
     
-    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView) {
+    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView)
+    {
         let size = textView.bounds.size
         let newSize = feedTableView.sizeThatFits(CGSize(width: size.width,
                                                          height: CGFloat.greatestFiniteMagnitude))
