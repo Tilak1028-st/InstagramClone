@@ -60,8 +60,8 @@ class SearchViewController: UIViewController {
         
         let tripletItem = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalWidth(1)))
+                widthDimension: .fractionalWidth(1/3),
+                heightDimension: .fractionalHeight(1)))
         
         tripletItem.contentInsets = NSDirectionalEdgeInsets(
             top: 2,
