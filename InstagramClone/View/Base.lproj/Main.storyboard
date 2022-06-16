@@ -172,8 +172,24 @@
                     <view key="view" contentMode="scaleToFill" id="xsR-to-4tw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-R9-5dw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Daq-io-JDs" id="Xgu-KX-JI2"/>
+                                    <outlet property="delegate" destination="Daq-io-JDs" id="YcW-RW-qTQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="N0g-x3-ERN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bbr-R9-5dw" firstAttribute="leading" secondItem="N0g-x3-ERN" secondAttribute="leading" id="3MK-c5-1fC"/>
+                            <constraint firstItem="N0g-x3-ERN" firstAttribute="bottom" secondItem="bbr-R9-5dw" secondAttribute="bottom" id="6BX-ug-Q3E"/>
+                            <constraint firstItem="N0g-x3-ERN" firstAttribute="trailing" secondItem="bbr-R9-5dw" secondAttribute="trailing" id="JcX-EP-lxt"/>
+                            <constraint firstItem="bbr-R9-5dw" firstAttribute="top" secondItem="N0g-x3-ERN" secondAttribute="top" id="lBN-ni-w4w"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="video" catalog="system" selectedImage="video.fill" id="vL4-BP-iX0"/>
                     <navigationItem key="navigationItem" id="GoU-Di-qKM">
@@ -186,6 +202,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barButtonItem" destination="VKV-CV-GFg" id="YLW-dP-b89"/>
+                        <outlet property="reelTableView" destination="bbr-R9-5dw" id="xNg-kk-rad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jk0-nU-8K9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

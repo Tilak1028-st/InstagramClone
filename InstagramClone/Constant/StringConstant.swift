@@ -13,4 +13,5 @@ class Constant
     static var feedTableViewCell: String = "FeedTableViewCell"
     static var feedHeadercell: String = "FeedHeaderTableViewCell"
     static var searchCollectionViewCell: String = "SearchCollectionViewCell"
+    static var reelTableViewCell: String = "ReelTableViewCell"
 }
