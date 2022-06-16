@@ -18,6 +18,9 @@
 		8271E905285A0503005950B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E8FF285A0503005950B0 /* ProfileViewController.swift */; };
 		8271E906285A0503005950B0 /* ReelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E900285A0503005950B0 /* ReelViewController.swift */; };
 		8271E907285A0503005950B0 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E901285A0503005950B0 /* InstagramViewController.swift */; };
+		827E95C3285ADDA500BAEC4C /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95C1285ADDA500BAEC4C /* StoryCollectionViewCell.swift */; };
+		827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */; };
+		827E95C7285ADED300BAEC4C /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95C6285ADED300BAEC4C /* StringConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		8271E8FF285A0503005950B0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8271E900285A0503005950B0 /* ReelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelViewController.swift; sourceTree = "<group>"; };
 		8271E901285A0503005950B0 /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		827E95C1285ADDA500BAEC4C /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		827E95C6285ADED300BAEC4C /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				8271E8FA285A0496005950B0 /* Delegate */,
+				827E95C5285ADEB400BAEC4C /* Constant */,
+				827E95C0285ADD7000BAEC4C /* Cell */,
 				8271E8FB285A04B4005950B0 /* ViewController */,
 				8271E908285A0520005950B0 /* View */,
 				8271E8EF285A043C005950B0 /* Assets.xcassets */,
@@ -104,6 +112,23 @@
 				8271E8F1285A043C005950B0 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		827E95C0285ADD7000BAEC4C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				827E95C1285ADDA500BAEC4C /* StoryCollectionViewCell.swift */,
+				827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		827E95C5285ADEB400BAEC4C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				827E95C6285ADED300BAEC4C /* StringConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */,
 				8271E8F3285A043C005950B0 /* LaunchScreen.storyboard in Resources */,
 				8271E8F0285A043C005950B0 /* Assets.xcassets in Resources */,
 				8271E8EE285A0439005950B0 /* Main.storyboard in Resources */,
@@ -181,6 +207,8 @@
 				8271E906285A0503005950B0 /* ReelViewController.swift in Sources */,
 				8271E8E7285A0439005950B0 /* AppDelegate.swift in Sources */,
 				8271E8E9285A0439005950B0 /* SceneDelegate.swift in Sources */,
+				827E95C7285ADED300BAEC4C /* StringConstant.swift in Sources */,
+				827E95C3285ADDA500BAEC4C /* StoryCollectionViewCell.swift in Sources */,
 				8271E905285A0503005950B0 /* ProfileViewController.swift in Sources */,
 				8271E907285A0503005950B0 /* InstagramViewController.swift in Sources */,
 				8271E903285A0503005950B0 /* ActivityViewController.swift in Sources */,

@@ -11,7 +11,7 @@
         <!--Instagram View Controller-->
         <scene sceneID="Iyc-KV-fTK">
             <objects>
-                <tabBarController id="yZT-no-0sj" customClass="InstagramViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="yZT-no-0sj" customClass="InstagramViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M8m-rW-Dkw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -33,12 +33,37 @@
         <!--Home View Controller-->
         <scene sceneID="QWv-LL-f84">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="EP8-2N-t8y" customClass="HomeViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="EP8-2N-t8y" customClass="HomeViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbq-sT-DAV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2zD-RB-f3H">
+                                <rect key="frame" x="0.0" y="88" width="414" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QKm-5v-wsc"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="5" id="PTg-Qw-b2k">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EP8-2N-t8y" id="Gad-rJ-9RM"/>
+                                    <outlet property="delegate" destination="EP8-2N-t8y" id="7ia-sL-lM0"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="I8I-dD-EbU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2zD-RB-f3H" firstAttribute="trailing" secondItem="I8I-dD-EbU" secondAttribute="trailing" id="AzA-TS-zBz"/>
+                            <constraint firstItem="2zD-RB-f3H" firstAttribute="top" secondItem="I8I-dD-EbU" secondAttribute="top" id="PC8-vj-ViB"/>
+                            <constraint firstItem="2zD-RB-f3H" firstAttribute="leading" secondItem="I8I-dD-EbU" secondAttribute="leading" id="XD2-5S-mRh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="house" catalog="system" selectedImage="house.fill" id="CEr-kH-DtR"/>
                     <navigationItem key="navigationItem" id="LbS-u5-FFm">
@@ -51,10 +76,13 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="storyCollectionView" destination="2zD-RB-f3H" id="PHX-jg-d4m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oP6-mP-e8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2878" y="1414"/>
+            <point key="canvasLocation" x="-2878.2608695652175" y="1413.6160714285713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5XN-oy-Hk6">
@@ -127,7 +155,7 @@
         <!--Reel View Controller-->
         <scene sceneID="Zya-8T-ADb">
             <objects>
-                <viewController storyboardIdentifier="ReelViewController" id="Daq-io-JDs" customClass="ReelViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReelViewController" id="Daq-io-JDs" customClass="ReelViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xsR-to-4tw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +199,7 @@
         <!--Activity View Controller-->
         <scene sceneID="Vn8-wr-67d">
             <objects>
-                <viewController storyboardIdentifier="ActivityViewController" id="kpO-H0-Ppm" customClass="ActivityViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivityViewController" id="kpO-H0-Ppm" customClass="ActivityViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bK-ap-l9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +223,7 @@
         <!--Search View Controller-->
         <scene sceneID="GNh-K0-gev">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="Nxg-ca-399" customClass="SearchViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="Nxg-ca-399" customClass="SearchViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L7j-vt-4CF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +248,7 @@
         <!--Profile View Controller-->
         <scene sceneID="BEK-iE-CIJ">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="dGS-wO-86C" customClass="ProfileViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="dGS-wO-86C" customClass="ProfileViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cb8-g1-4ds">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
