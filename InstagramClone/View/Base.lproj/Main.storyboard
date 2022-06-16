@@ -56,7 +56,7 @@
                                     <outlet property="delegate" destination="EP8-2N-t8y" id="7ia-sL-lM0"/>
                                 </connections>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-02-EoF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-02-EoF">
                                 <rect key="frame" x="0.0" y="228" width="414" height="585"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
@@ -240,12 +240,36 @@
                     <view key="view" contentMode="scaleToFill" id="L7j-vt-4CF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wtl-69-jFF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1al-xu-neC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nxg-ca-399" id="sxK-PA-qbP"/>
+                                    <outlet property="delegate" destination="Nxg-ca-399" id="i1A-Zg-Wi0"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ca3-he-Plp"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="leading" secondItem="Ca3-he-Plp" secondAttribute="leading" id="1Yp-Eg-Apy"/>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="top" secondItem="Ca3-he-Plp" secondAttribute="top" id="3w9-cZ-j1b"/>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="trailing" secondItem="Ca3-he-Plp" secondAttribute="trailing" id="4Cg-lv-E00"/>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="bottom" secondItem="Ca3-he-Plp" secondAttribute="bottom" id="haF-WU-jaM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="lhA-Mf-POA"/>
                     <navigationItem key="navigationItem" id="PEU-tA-kpY"/>
                     <connections>
+                        <outlet property="collectionView" destination="Wtl-69-jFF" id="ZTs-DT-7FL"/>
                         <outlet property="searchBarView" destination="0PO-Bd-Nma" id="5pl-pi-BHx"/>
                     </connections>
                 </viewController>
@@ -256,7 +280,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </objects>
-            <point key="canvasLocation" x="-2243" y="1414"/>
+            <point key="canvasLocation" x="-2243.4782608695655" y="1413.6160714285713"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="BEK-iE-CIJ">
