@@ -46,8 +46,8 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource
        tableSection[section]
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        100
+        75
     }
 }
