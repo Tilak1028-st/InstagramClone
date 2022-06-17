@@ -110,6 +110,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     {
         let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedTableViewCell, for: indexPath) as! FeedTableViewCell
         cell.growingCellDelegate = self
+        cell.postCollectionView.tag = indexPath.row
         return cell
     }
     
@@ -117,8 +118,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     {
         let headerView = Bundle.main.loadNibNamed(Constant.feedHeadercell, owner: self, options: nil)?.first
         return headerView as? UIView
-        
     }
+
 }
 
 //MARK: - Extension for growing textview height as new text entered.

@@ -15,4 +15,5 @@ class Constant
     static var searchCollectionViewCell: String = "SearchCollectionViewCell"
     static var reelTableViewCell: String = "ReelTableViewCell"
     static var activityTableView: String = "ActivityTableViewCell"
+    static var postCollectionView: String = "PostCollectionViewCell"
 }

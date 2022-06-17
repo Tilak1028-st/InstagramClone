@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822464D1285C49C8001BE828 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822464CF285C49C8001BE828 /* PostCollectionViewCell.swift */; };
+		822464D2285C49C8001BE828 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822464D0285C49C8001BE828 /* PostCollectionViewCell.xib */; };
 		8271E8E7285A0439005950B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E8E6285A0439005950B0 /* AppDelegate.swift */; };
 		8271E8E9285A0439005950B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E8E8285A0439005950B0 /* SceneDelegate.swift */; };
 		8271E8EE285A0439005950B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8271E8EC285A0439005950B0 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		822464CF285C49C8001BE828 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		822464D0285C49C8001BE828 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		8271E8E3285A0439005950B0 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8271E8E6285A0439005950B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8271E8E8285A0439005950B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				827E95C2285ADDA500BAEC4C /* StoryCollectionViewCell.xib */,
 				827E95C8285AF6B000BAEC4C /* FeedTableViewCell.swift */,
 				827E95C9285AF6B000BAEC4C /* FeedTableViewCell.xib */,
+				822464CF285C49C8001BE828 /* PostCollectionViewCell.swift */,
+				822464D0285C49C8001BE828 /* PostCollectionViewCell.xib */,
 				827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */,
 				827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */,
 				827E95D0285B171900BAEC4C /* SearchCollectionViewCell.swift */,
@@ -233,6 +239,7 @@
 				827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */,
 				827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */,
 				827E95CB285AF6B000BAEC4C /* FeedTableViewCell.xib in Resources */,
+				822464D2285C49C8001BE828 /* PostCollectionViewCell.xib in Resources */,
 				8271E8F3285A043C005950B0 /* LaunchScreen.storyboard in Resources */,
 				8271E8F0285A043C005950B0 /* Assets.xcassets in Resources */,
 				8271E8EE285A0439005950B0 /* Main.storyboard in Resources */,
@@ -258,6 +265,7 @@
 				827E95CE285B01C000BAEC4C /* FeedHeaderTableViewCell.swift in Sources */,
 				827E95D6285B53D900BAEC4C /* ReelTableViewCell.swift in Sources */,
 				827E95D2285B171900BAEC4C /* SearchCollectionViewCell.swift in Sources */,
+				822464D1285C49C8001BE828 /* PostCollectionViewCell.swift in Sources */,
 				8271E903285A0503005950B0 /* ActivityViewController.swift in Sources */,
 				8271E902285A0503005950B0 /* HomeViewController.swift in Sources */,
 				827E95CA285AF6B000BAEC4C /* FeedTableViewCell.swift in Sources */,
