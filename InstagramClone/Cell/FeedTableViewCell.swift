@@ -11,6 +11,7 @@ class FeedTableViewCell: UITableViewCell {
     
     weak var growingCellDelegate: GrowingCellProtocol?
     
+    @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var postCollectionView: UICollectionView!
     @IBOutlet weak var pageController: UIPageControl!
@@ -24,7 +25,7 @@ class FeedTableViewCell: UITableViewCell {
         commentTextView.delegate = self
         self.pageController.numberOfPages = images.count
         postCollectionView.register(UINib(nibName: Constant.postCollectionView, bundle: nil), forCellWithReuseIdentifier: Constant.postCollectionView)
-        self.postCollectionView.isPagingEnabled = true
+        
         self.postCollectionView.reloadData()
     }
     
@@ -47,7 +48,6 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
         let item = postCollectionView.dequeueReusableCell(withReuseIdentifier: Constant.postCollectionView, for: indexPath) as! PostCollectionViewCell
         
         item.postImageView.image = UIImage(named: images[indexPath.item])
-        print(item.postImageView.frame.width)
         return item
     }
     
@@ -57,6 +57,7 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
             let pageWidth = scrollView.frame.width
             self.currentPage = Int((scrollView.contentOffset.x + pageWidth / 2) / pageWidth)
             self.pageController.currentPage = self.currentPage
+            self.countLabel.text = "\(currentPage+1)/\(images.count)"
         }
     }
 }

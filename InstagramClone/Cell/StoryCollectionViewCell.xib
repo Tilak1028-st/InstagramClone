@@ -17,16 +17,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="icons8-super-mario-90" translatesAutoresizingMaskIntoConstraints="NO" id="JwF-Ye-SKu">
-                        <rect key="frame" x="21.5" y="5" width="90" height="90"/>
+                        <rect key="frame" x="26.5" y="5" width="80" height="80"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="90" id="8wB-NG-CCI"/>
-                            <constraint firstAttribute="width" constant="90" id="fya-zd-Dhq"/>
+                            <constraint firstAttribute="height" constant="80" id="8wB-NG-CCI"/>
+                            <constraint firstAttribute="width" constant="80" id="fya-zd-Dhq"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-TL-3wm">
-                        <rect key="frame" x="10" y="100" width="113" height="0.0"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="10" y="90" width="113" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>

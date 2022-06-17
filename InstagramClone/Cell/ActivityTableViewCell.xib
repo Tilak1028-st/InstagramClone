@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="pk6" translatesAutoresizingMaskIntoConstraints="NO" id="RIw-iE-OCx">
-                        <rect key="frame" x="429" y="10" width="45" height="56"/>
+                        <rect key="frame" x="429" y="10" width="45" height="45"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="gXN-mq-U8X"/>
@@ -30,8 +30,8 @@
                         <color key="textColor" systemColor="systemGrayColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="y4c-cy-OE2">
-                        <rect key="frame" x="10" y="10" width="45" height="56"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y4c-cy-OE2">
+                        <rect key="frame" x="10" y="11.5" width="45" height="45.5"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="C22-RQ-WJP"/>
@@ -39,8 +39,8 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="y4c-cy-OE2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Av6-jv-Gop"/>
-                    <constraint firstItem="RIw-iE-OCx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="G7A-D8-Rp8"/>
+                    <constraint firstItem="y4c-cy-OE2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-4" id="Av6-jv-Gop"/>
+                    <constraint firstItem="RIw-iE-OCx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-5.5" id="G7A-D8-Rp8"/>
                     <constraint firstItem="23Z-WX-E5C" firstAttribute="top" secondItem="y4c-cy-OE2" secondAttribute="top" id="IGw-6c-mZ5"/>
                     <constraint firstItem="RIw-iE-OCx" firstAttribute="leading" secondItem="23Z-WX-E5C" secondAttribute="trailing" constant="10" id="KHF-B8-vlR"/>
                     <constraint firstItem="y4c-cy-OE2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RfR-hE-DGJ"/>
@@ -62,8 +62,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="pk6" width="711" height="400"/>
-        <image name="user" width="45" height="45"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

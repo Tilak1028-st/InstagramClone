@@ -66,6 +66,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let item = storyCollectionView.dequeueReusableCell(withReuseIdentifier: Constant.storyCollectionCell, for: indexPath) as! StoryCollectionViewCell
         return item
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard.init(name: Constant.home, bundle: nil)
+        let storyVc = storyboard.instantiateViewController(withIdentifier: "StoryViewController") as! StoryViewController
+        self.present(storyVc, animated: true, completion: nil)
+        storyVc.modalPresentationStyle = .fullScreen
+    }
 }
 
 // MARK: - Extension for CollectionView Delegate Flowlayout.

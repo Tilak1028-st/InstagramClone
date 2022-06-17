@@ -34,11 +34,6 @@
                             <outlet property="delegate" destination="KGk-i7-Jjw" id="PD3-Am-5Q0"/>
                         </connections>
                     </collectionView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-OF-76v">
-                        <rect key="frame" x="154" y="224" width="101" height="26"/>
-                        <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="currentPageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </pageControl>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oB-ca-T0S">
                         <rect key="frame" x="0.0" y="260" width="410" height="30"/>
                         <subviews>
@@ -70,9 +65,16 @@
                                     <constraint firstAttribute="width" constant="32" id="e1H-ip-xQt"/>
                                 </constraints>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-OF-76v">
+                                <rect key="frame" x="127.5" y="2" width="155.5" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gAS-OF-76v" firstAttribute="centerY" secondItem="rj3-yB-ocD" secondAttribute="centerY" id="53u-Eh-h4K"/>
+                            <constraint firstItem="gAS-OF-76v" firstAttribute="centerX" secondItem="4oB-ca-T0S" secondAttribute="centerX" id="9DM-Ad-1dG"/>
                             <constraint firstItem="rj3-yB-ocD" firstAttribute="bottom" secondItem="o9j-RJ-mA1" secondAttribute="bottom" id="DxA-KB-gkb"/>
                             <constraint firstItem="o9j-RJ-mA1" firstAttribute="leading" secondItem="4oB-ca-T0S" secondAttribute="leading" constant="10" id="Eue-Lf-rwQ"/>
                             <constraint firstItem="o9j-RJ-mA1" firstAttribute="top" secondItem="4oB-ca-T0S" secondAttribute="top" constant="5" id="M9m-a4-A5R"/>
@@ -101,29 +103,36 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-FU-rnx">
+                        <rect key="frame" x="390" y="10" width="0.0" height="0.0"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="qsb-hl-gck" firstAttribute="top" secondItem="4oB-ca-T0S" secondAttribute="bottom" constant="5" id="1Yf-lc-9Fn"/>
                     <constraint firstItem="4oB-ca-T0S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="22j-91-gwa"/>
                     <constraint firstItem="bxd-zh-h7c" firstAttribute="top" secondItem="qsb-hl-gck" secondAttribute="bottom" constant="5" id="260-VJ-nRb"/>
-                    <constraint firstItem="gAS-OF-76v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="134" id="4k5-PA-fBL"/>
+                    <constraint firstAttribute="trailing" secondItem="pSF-FU-rnx" secondAttribute="trailing" constant="20" id="5nl-qe-vg5"/>
                     <constraint firstAttribute="bottom" secondItem="bxd-zh-h7c" secondAttribute="bottom" constant="10" id="ADk-MY-V1c"/>
                     <constraint firstItem="bxd-zh-h7c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Fn4-AF-Yye"/>
                     <constraint firstAttribute="trailing" secondItem="qsb-hl-gck" secondAttribute="trailing" constant="15" id="Mp2-4B-SHE"/>
                     <constraint firstAttribute="trailing" secondItem="4oB-ca-T0S" secondAttribute="trailing" id="NBG-8N-v9l"/>
                     <constraint firstItem="4oB-ca-T0S" firstAttribute="top" secondItem="Qzf-IK-b9a" secondAttribute="bottom" constant="10" id="TZ8-Bd-bq8"/>
                     <constraint firstAttribute="trailing" secondItem="bxd-zh-h7c" secondAttribute="trailing" constant="15" id="aXA-0q-Lwn"/>
+                    <constraint firstItem="pSF-FU-rnx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aeT-DJ-pe0"/>
                     <constraint firstItem="qsb-hl-gck" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="en9-eh-8vJ"/>
                     <constraint firstAttribute="trailing" secondItem="Qzf-IK-b9a" secondAttribute="trailing" id="giw-L3-JXG"/>
                     <constraint firstItem="Qzf-IK-b9a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nDh-zx-9Ha"/>
                     <constraint firstItem="Qzf-IK-b9a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nzO-GW-1x6"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="gAS-OF-76v" secondAttribute="trailing" constant="135" id="xuv-oR-gDV"/>
-                    <constraint firstItem="gAS-OF-76v" firstAttribute="bottom" secondItem="Qzf-IK-b9a" secondAttribute="bottom" id="yMs-5E-fsY"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="commentTextView" destination="bxd-zh-h7c" id="fOd-RA-gYn"/>
+                <outlet property="countLabel" destination="pSF-FU-rnx" id="RMu-2S-r7Q"/>
                 <outlet property="pageController" destination="gAS-OF-76v" id="7kA-r1-Z7r"/>
                 <outlet property="postCollectionView" destination="Qzf-IK-b9a" id="5xe-Ns-gkR"/>
             </connections>
@@ -137,6 +146,9 @@
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
