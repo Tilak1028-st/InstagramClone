@@ -11,6 +11,6 @@ class InstagramViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        print(self.view.frame.width)
     }
 }

@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addLeftBarIcon(named: "Instagram_logo.svg")
-
         storyCollectionView.register(UINib.init(nibName: Constant.storyCollectionCell, bundle: nil), forCellWithReuseIdentifier: Constant.storyCollectionCell)
         tableConfiguration()
     }
@@ -98,12 +97,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 {
     func numberOfSections(in tableView: UITableView) -> Int
     {
-        1
+        10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        10
+        1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
