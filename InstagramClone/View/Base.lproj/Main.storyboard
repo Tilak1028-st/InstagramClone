@@ -233,8 +233,24 @@
                     <view key="view" contentMode="scaleToFill" id="3bK-ap-l9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SFl-9b-u3Z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kpO-H0-Ppm" id="3FJ-Sc-OvU"/>
+                                    <outlet property="delegate" destination="kpO-H0-Ppm" id="3Fj-f4-0oF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="klu-Bu-gqM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="bottom" secondItem="klu-Bu-gqM" secondAttribute="bottom" id="7nc-Ok-Nbv"/>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="trailing" secondItem="klu-Bu-gqM" secondAttribute="trailing" id="MFq-Dy-nia"/>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="leading" secondItem="klu-Bu-gqM" secondAttribute="leading" id="Meh-RU-P5e"/>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="top" secondItem="klu-Bu-gqM" secondAttribute="top" id="tr0-oh-9pT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="heart" catalog="system" selectedImage="heart.fill" id="f96-mP-e3A"/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="6fq-5M-ym4">
@@ -243,12 +259,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityTableView" destination="SFl-9b-u3Z" id="3A1-6M-MZE"/>
                         <outlet property="navBarButtonItem" destination="Tyv-ym-XwH" id="vya-DM-trS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwc-VC-GEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-888" y="1414"/>
+            <point key="canvasLocation" x="-888.40579710144937" y="1413.6160714285713"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="GNh-K0-gev">
