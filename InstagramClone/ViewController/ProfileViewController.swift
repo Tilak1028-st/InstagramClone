@@ -9,10 +9,20 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var addfollowerButton: UIButton!
+    @IBOutlet weak var editProfileButton: UIButton!
     @IBOutlet weak var barButtonItem: UIBarButtonItem!
+    @IBOutlet weak var profileimageView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         barButtonItem.setTitleTextAttributes([ NSAttributedString.Key.font: UIFont(name: "Arial", size: 23)!], for: UIControl.State.normal)
+        self.profileimageView.layer.borderWidth = 1
+        self.profileimageView.layer.borderColor = UIColor.gray.cgColor
+        self.profileimageView.layer.cornerRadius = self.profileimageView.frame.size.width / 2
+        editProfileButton.layer.borderWidth = 0.7
+        editProfileButton.layer.borderColor = UIColor.gray.cgColor
+        addfollowerButton.layer.borderWidth = 0.7
+        addfollowerButton.layer.borderColor = UIColor.gray.cgColor
     }
 }

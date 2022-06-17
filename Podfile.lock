@@ -1,0 +1,16 @@
+PODS:
+  - ScrollableSegmentedControl (1.5.0)
+
+DEPENDENCIES:
+  - ScrollableSegmentedControl
+
+SPEC REPOS:
+  trunk:
+    - ScrollableSegmentedControl
+
+SPEC CHECKSUMS:
+  ScrollableSegmentedControl: 2e64bbe8968a7fcd8aae5014434481464fcdfe60
+
+PODFILE CHECKSUM: 16135e5b41d244f4a992522967cc32dd60d871a8
+
+COCOAPODS: 1.11.2

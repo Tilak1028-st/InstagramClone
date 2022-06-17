@@ -15,9 +15,6 @@ class FeedHeaderTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.userImageView.layer.borderWidth = 1
-        self.userImageView.layer.borderColor = UIColor.gray.cgColor
-        self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
