@@ -12,6 +12,7 @@ class ActivityTableViewCell: UITableViewCell {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var profileImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.profileImageView.layer.borderWidth = 1
