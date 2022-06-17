@@ -407,21 +407,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4F-j1-VlL">
                                 <rect key="frame" x="0.0" y="274" width="414" height="50"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WkZ-Rj-yRR">
-                                        <rect key="frame" x="10" y="0.0" width="394" height="51"/>
-                                        <segments>
-                                            <segment title="First"/>
-                                            <segment title="Second"/>
-                                        </segments>
-                                    </segmentedControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-k5-aRc" customClass="ScrollableSegmentedControl" customModule="ScrollableSegmentedControl">
+                                        <rect key="frame" x="10" y="10" width="394" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="WkZ-Rj-yRR" firstAttribute="top" secondItem="E4F-j1-VlL" secondAttribute="top" id="P3W-VG-Bzr"/>
+                                    <constraint firstAttribute="trailing" secondItem="fDQ-k5-aRc" secondAttribute="trailing" constant="10" id="JAv-dM-fli"/>
                                     <constraint firstAttribute="height" constant="50" id="Ps1-aB-9Kj"/>
-                                    <constraint firstAttribute="trailing" secondItem="WkZ-Rj-yRR" secondAttribute="trailing" constant="10" id="UeU-d6-r6S"/>
-                                    <constraint firstAttribute="bottom" secondItem="WkZ-Rj-yRR" secondAttribute="bottom" id="auH-8J-bna"/>
-                                    <constraint firstItem="WkZ-Rj-yRR" firstAttribute="leading" secondItem="E4F-j1-VlL" secondAttribute="leading" constant="10" id="um2-Bh-cmy"/>
+                                    <constraint firstItem="fDQ-k5-aRc" firstAttribute="top" secondItem="E4F-j1-VlL" secondAttribute="top" constant="10" id="hIf-Si-UL5"/>
+                                    <constraint firstItem="fDQ-k5-aRc" firstAttribute="leading" secondItem="E4F-j1-VlL" secondAttribute="leading" constant="10" id="hmn-wh-xju"/>
+                                    <constraint firstAttribute="bottom" secondItem="fDQ-k5-aRc" secondAttribute="bottom" constant="10" id="jWa-kZ-ypL"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKd-h0-Oo4">
@@ -466,6 +463,7 @@
                         <outlet property="barButtonItem" destination="SRu-Eh-HIT" id="aFj-wF-xUu"/>
                         <outlet property="editProfileButton" destination="RKd-h0-Oo4" id="AZv-ab-Xxv"/>
                         <outlet property="profileimageView" destination="pS7-Zz-vK1" id="Bvm-dk-x8V"/>
+                        <outlet property="segment" destination="fDQ-k5-aRc" id="hwg-R8-0LQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RkV-6d-lOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
