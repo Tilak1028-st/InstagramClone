@@ -24,5 +24,4 @@ class FeedHeaderTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    
 }

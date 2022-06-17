@@ -27,6 +27,12 @@
 		827E95CB285AF6B000BAEC4C /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95C9285AF6B000BAEC4C /* FeedTableViewCell.xib */; };
 		827E95CE285B01C000BAEC4C /* FeedHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */; };
 		827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */; };
+		827E95D2285B171900BAEC4C /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95D0285B171900BAEC4C /* SearchCollectionViewCell.swift */; };
+		827E95D3285B171900BAEC4C /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95D1285B171900BAEC4C /* SearchCollectionViewCell.xib */; };
+		827E95D6285B53D900BAEC4C /* ReelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95D4285B53D900BAEC4C /* ReelTableViewCell.swift */; };
+		827E95D7285B53D900BAEC4C /* ReelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95D5285B53D900BAEC4C /* ReelTableViewCell.xib */; };
+		82897BC3285C35B200CD01FE /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */; };
+		82897BC4285C35B200CD01FE /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,12 @@
 		827E95C9285AF6B000BAEC4C /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		827E95D0285B171900BAEC4C /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		827E95D1285B171900BAEC4C /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		827E95D4285B53D900BAEC4C /* ReelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelTableViewCell.swift; sourceTree = "<group>"; };
+		827E95D5285B53D900BAEC4C /* ReelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelTableViewCell.xib; sourceTree = "<group>"; };
+		82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +101,7 @@
 				827E95C0285ADD7000BAEC4C /* Cell */,
 				8271E8FB285A04B4005950B0 /* ViewController */,
 				8271E908285A0520005950B0 /* View */,
-				8271E8EF285A043C005950B0 /* Assets.xcassets */,
+				82897BC0285C327C00CD01FE /* Assets */,
 				8271E8F4285A043C005950B0 /* Info.plist */,
 			);
 			path = InstagramClone;
@@ -137,6 +149,12 @@
 				822464D0285C49C8001BE828 /* PostCollectionViewCell.xib */,
 				827E95CC285B01C000BAEC4C /* FeedHeaderTableViewCell.swift */,
 				827E95CD285B01C000BAEC4C /* FeedHeaderTableViewCell.xib */,
+				827E95D0285B171900BAEC4C /* SearchCollectionViewCell.swift */,
+				827E95D1285B171900BAEC4C /* SearchCollectionViewCell.xib */,
+				827E95D4285B53D900BAEC4C /* ReelTableViewCell.swift */,
+				827E95D5285B53D900BAEC4C /* ReelTableViewCell.xib */,
+				82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */,
+				82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -147,6 +165,14 @@
 				827E95C6285ADED300BAEC4C /* StringConstant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		82897BC0285C327C00CD01FE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8EF285A043C005950B0 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827E95D3285B171900BAEC4C /* SearchCollectionViewCell.xib in Resources */,
+				82897BC4285C35B200CD01FE /* ActivityTableViewCell.xib in Resources */,
+				827E95D7285B53D900BAEC4C /* ReelTableViewCell.xib in Resources */,
 				827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */,
 				827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */,
 				827E95CB285AF6B000BAEC4C /* FeedTableViewCell.xib in Resources */,
@@ -226,6 +255,7 @@
 			files = (
 				8271E904285A0503005950B0 /* SearchViewController.swift in Sources */,
 				8271E906285A0503005950B0 /* ReelViewController.swift in Sources */,
+				82897BC3285C35B200CD01FE /* ActivityTableViewCell.swift in Sources */,
 				8271E8E7285A0439005950B0 /* AppDelegate.swift in Sources */,
 				8271E8E9285A0439005950B0 /* SceneDelegate.swift in Sources */,
 				827E95C7285ADED300BAEC4C /* StringConstant.swift in Sources */,
@@ -233,6 +263,8 @@
 				8271E905285A0503005950B0 /* ProfileViewController.swift in Sources */,
 				8271E907285A0503005950B0 /* InstagramViewController.swift in Sources */,
 				827E95CE285B01C000BAEC4C /* FeedHeaderTableViewCell.swift in Sources */,
+				827E95D6285B53D900BAEC4C /* ReelTableViewCell.swift in Sources */,
+				827E95D2285B171900BAEC4C /* SearchCollectionViewCell.swift in Sources */,
 				822464D1285C49C8001BE828 /* PostCollectionViewCell.swift in Sources */,
 				8271E903285A0503005950B0 /* ActivityViewController.swift in Sources */,
 				8271E902285A0503005950B0 /* HomeViewController.swift in Sources */,

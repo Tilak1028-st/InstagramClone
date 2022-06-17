@@ -30,6 +30,8 @@ class FeedTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+}
         
     }
 }
@@ -65,14 +67,19 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
 }
 
 
+//MARK: - Extension for textview growing height
+
 extension FeedTableViewCell: UITextViewDelegate {
     
-    func textViewDidChange(_ textView: UITextView) {
+    func textViewDidChange(_ textView: UITextView)
+    {
         if let deletate = growingCellDelegate {
             deletate.updateHeightOfRow(self, textView)
         }
     }
 }
+
+//MARK: - Protocol for textview growing height
 
 protocol GrowingCellProtocol: AnyObject {
     func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView)

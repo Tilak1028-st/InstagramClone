@@ -19,5 +19,4 @@ class StoryCollectionViewCell: UICollectionViewCell {
         self.storyDpImgView.layer.cornerRadius = self.storyDpImgView.frame.size.width / 2
         self.userNameLabel.text = "Username"
     }
-
 }

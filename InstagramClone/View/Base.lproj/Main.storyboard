@@ -172,8 +172,24 @@
                     <view key="view" contentMode="scaleToFill" id="xsR-to-4tw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-R9-5dw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Daq-io-JDs" id="Xgu-KX-JI2"/>
+                                    <outlet property="delegate" destination="Daq-io-JDs" id="YcW-RW-qTQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="N0g-x3-ERN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bbr-R9-5dw" firstAttribute="leading" secondItem="N0g-x3-ERN" secondAttribute="leading" id="3MK-c5-1fC"/>
+                            <constraint firstItem="N0g-x3-ERN" firstAttribute="bottom" secondItem="bbr-R9-5dw" secondAttribute="bottom" id="6BX-ug-Q3E"/>
+                            <constraint firstItem="N0g-x3-ERN" firstAttribute="trailing" secondItem="bbr-R9-5dw" secondAttribute="trailing" id="JcX-EP-lxt"/>
+                            <constraint firstItem="bbr-R9-5dw" firstAttribute="top" secondItem="N0g-x3-ERN" secondAttribute="top" id="lBN-ni-w4w"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="video" catalog="system" selectedImage="video.fill" id="vL4-BP-iX0"/>
                     <navigationItem key="navigationItem" id="GoU-Di-qKM">
@@ -186,6 +202,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barButtonItem" destination="VKV-CV-GFg" id="YLW-dP-b89"/>
+                        <outlet property="reelTableView" destination="bbr-R9-5dw" id="xNg-kk-rad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jk0-nU-8K9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -216,8 +233,24 @@
                     <view key="view" contentMode="scaleToFill" id="3bK-ap-l9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SFl-9b-u3Z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kpO-H0-Ppm" id="3FJ-Sc-OvU"/>
+                                    <outlet property="delegate" destination="kpO-H0-Ppm" id="3Fj-f4-0oF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="klu-Bu-gqM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="bottom" secondItem="klu-Bu-gqM" secondAttribute="bottom" id="7nc-Ok-Nbv"/>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="trailing" secondItem="klu-Bu-gqM" secondAttribute="trailing" id="MFq-Dy-nia"/>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="leading" secondItem="klu-Bu-gqM" secondAttribute="leading" id="Meh-RU-P5e"/>
+                            <constraint firstItem="SFl-9b-u3Z" firstAttribute="top" secondItem="klu-Bu-gqM" secondAttribute="top" id="tr0-oh-9pT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="heart" catalog="system" selectedImage="heart.fill" id="f96-mP-e3A"/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="6fq-5M-ym4">
@@ -226,12 +259,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityTableView" destination="SFl-9b-u3Z" id="3A1-6M-MZE"/>
                         <outlet property="navBarButtonItem" destination="Tyv-ym-XwH" id="vya-DM-trS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwc-VC-GEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-888" y="1414"/>
+            <point key="canvasLocation" x="-888.40579710144937" y="1413.6160714285713"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="GNh-K0-gev">
@@ -240,12 +274,36 @@
                     <view key="view" contentMode="scaleToFill" id="L7j-vt-4CF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wtl-69-jFF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1al-xu-neC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nxg-ca-399" id="sxK-PA-qbP"/>
+                                    <outlet property="delegate" destination="Nxg-ca-399" id="i1A-Zg-Wi0"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ca3-he-Plp"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="leading" secondItem="Ca3-he-Plp" secondAttribute="leading" id="1Yp-Eg-Apy"/>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="top" secondItem="Ca3-he-Plp" secondAttribute="top" id="3w9-cZ-j1b"/>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="trailing" secondItem="Ca3-he-Plp" secondAttribute="trailing" id="4Cg-lv-E00"/>
+                            <constraint firstItem="Wtl-69-jFF" firstAttribute="bottom" secondItem="Ca3-he-Plp" secondAttribute="bottom" id="haF-WU-jaM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="lhA-Mf-POA"/>
                     <navigationItem key="navigationItem" id="PEU-tA-kpY"/>
                     <connections>
+                        <outlet property="collectionView" destination="Wtl-69-jFF" id="ZTs-DT-7FL"/>
                         <outlet property="searchBarView" destination="0PO-Bd-Nma" id="5pl-pi-BHx"/>
                     </connections>
                 </viewController>
@@ -256,7 +314,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </objects>
-            <point key="canvasLocation" x="-2243" y="1414"/>
+            <point key="canvasLocation" x="-2243.4782608695655" y="1413.6160714285713"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="BEK-iE-CIJ">
