@@ -29,6 +29,8 @@
 		827E95D3285B171900BAEC4C /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95D1285B171900BAEC4C /* SearchCollectionViewCell.xib */; };
 		827E95D6285B53D900BAEC4C /* ReelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E95D4285B53D900BAEC4C /* ReelTableViewCell.swift */; };
 		827E95D7285B53D900BAEC4C /* ReelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827E95D5285B53D900BAEC4C /* ReelTableViewCell.xib */; };
+		82897BC3285C35B200CD01FE /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */; };
+		82897BC4285C35B200CD01FE /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		827E95D1285B171900BAEC4C /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		827E95D4285B53D900BAEC4C /* ReelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelTableViewCell.swift; sourceTree = "<group>"; };
 		827E95D5285B53D900BAEC4C /* ReelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelTableViewCell.xib; sourceTree = "<group>"; };
+		82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				827E95D1285B171900BAEC4C /* SearchCollectionViewCell.xib */,
 				827E95D4285B53D900BAEC4C /* ReelTableViewCell.swift */,
 				827E95D5285B53D900BAEC4C /* ReelTableViewCell.xib */,
+				82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */,
+				82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				827E95D3285B171900BAEC4C /* SearchCollectionViewCell.xib in Resources */,
+				82897BC4285C35B200CD01FE /* ActivityTableViewCell.xib in Resources */,
 				827E95D7285B53D900BAEC4C /* ReelTableViewCell.xib in Resources */,
 				827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */,
 				827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */,
@@ -241,6 +248,7 @@
 			files = (
 				8271E904285A0503005950B0 /* SearchViewController.swift in Sources */,
 				8271E906285A0503005950B0 /* ReelViewController.swift in Sources */,
+				82897BC3285C35B200CD01FE /* ActivityTableViewCell.swift in Sources */,
 				8271E8E7285A0439005950B0 /* AppDelegate.swift in Sources */,
 				8271E8E9285A0439005950B0 /* SceneDelegate.swift in Sources */,
 				827E95C7285ADED300BAEC4C /* StringConstant.swift in Sources */,
