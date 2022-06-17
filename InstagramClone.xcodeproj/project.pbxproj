@@ -93,7 +93,7 @@
 				827E95C0285ADD7000BAEC4C /* Cell */,
 				8271E8FB285A04B4005950B0 /* ViewController */,
 				8271E908285A0520005950B0 /* View */,
-				8271E8EF285A043C005950B0 /* Assets.xcassets */,
+				82897BC0285C327C00CD01FE /* Assets */,
 				8271E8F4285A043C005950B0 /* Info.plist */,
 			);
 			path = InstagramClone;
@@ -153,6 +153,14 @@
 				827E95C6285ADED300BAEC4C /* StringConstant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		82897BC0285C327C00CD01FE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8EF285A043C005950B0 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
