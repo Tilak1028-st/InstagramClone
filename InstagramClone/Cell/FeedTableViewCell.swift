@@ -32,9 +32,7 @@ class FeedTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 }
-        
-    }
-}
+    
 
 //MARK:  - Extension for UItableView delegate and datasource.
 
