@@ -11,6 +11,7 @@
 		822464D2285C49C8001BE828 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822464D0285C49C8001BE828 /* PostCollectionViewCell.xib */; };
 		822464D4285CA65C001BE828 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822464D3285CA65C001BE828 /* StoryViewController.swift */; };
 		822464D6285CA6A5001BE828 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822464D5285CA6A5001BE828 /* Home.storyboard */; };
+		824A9DD0285D87B600898AD8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824A9DCF285D87B600898AD8 /* Profile.storyboard */; };
 		8271E8E7285A0439005950B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E8E6285A0439005950B0 /* AppDelegate.swift */; };
 		8271E8E9285A0439005950B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271E8E8285A0439005950B0 /* SceneDelegate.swift */; };
 		8271E8EE285A0439005950B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8271E8EC285A0439005950B0 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		822464D0285C49C8001BE828 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		822464D3285CA65C001BE828 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		822464D5285CA6A5001BE828 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		824A9DCF285D87B600898AD8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		8271E8E3285A0439005950B0 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8271E8E6285A0439005950B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8271E8E8285A0439005950B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 				C04EA0A2D162FDD69334EE25 /* Pods_InstagramClone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		824A9DD1285D880500898AD8 /* Profile ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8FF285A0503005950B0 /* ProfileViewController.swift */,
+			);
+			path = "Profile ViewController";
 			sourceTree = "<group>";
 		};
 		8271E8DA285A0439005950B0 = {
@@ -143,7 +153,7 @@
 				8271E8FE285A0503005950B0 /* SearchViewController.swift */,
 				8271E900285A0503005950B0 /* ReelViewController.swift */,
 				8271E8FD285A0503005950B0 /* ActivityViewController.swift */,
-				8271E8FF285A0503005950B0 /* ProfileViewController.swift */,
+				824A9DD1285D880500898AD8 /* Profile ViewController */,
 				822464D3285CA65C001BE828 /* StoryViewController.swift */,
 			);
 			path = ViewController;
@@ -155,6 +165,7 @@
 				8271E8EC285A0439005950B0 /* Main.storyboard */,
 				8271E8F1285A043C005950B0 /* LaunchScreen.storyboard */,
 				822464D5285CA6A5001BE828 /* Home.storyboard */,
+				824A9DCF285D87B600898AD8 /* Profile.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +213,6 @@
 				13EF6F1A518ECBEF93EFDEB9 /* Pods-InstagramClone.debug.xcconfig */,
 				292089F7F4D1A8243D8342EE /* Pods-InstagramClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -272,6 +282,7 @@
 				827E95D7285B53D900BAEC4C /* ReelTableViewCell.xib in Resources */,
 				827E95CF285B01C000BAEC4C /* FeedHeaderTableViewCell.xib in Resources */,
 				827E95C4285ADDA500BAEC4C /* StoryCollectionViewCell.xib in Resources */,
+				824A9DD0285D87B600898AD8 /* Profile.storyboard in Resources */,
 				827E95CB285AF6B000BAEC4C /* FeedTableViewCell.xib in Resources */,
 				822464D2285C49C8001BE828 /* PostCollectionViewCell.xib in Resources */,
 				8271E8F3285A043C005950B0 /* LaunchScreen.storyboard in Resources */,
