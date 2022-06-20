@@ -8,49 +8,89 @@
 
 /* Begin PBXBuildFile section */
 		00109BA5CDD36A89300010CA73414E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		067D745F59D77FC163092713B96BA2F3 /* Pods-InstagramClone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60992526F11ACB02B8925BFA232CB7E3 /* Pods-InstagramClone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E54794326C97CCABE3970CFE5930201 /* Pods-InstagramClone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3C3D3DE0E894078E28DCA2F18D5AF /* Pods-InstagramClone-dummy.m */; };
-		1C28C6908EF41EB7E16688CCEBFB280A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1E9EBB91AE05D4EE3D380D37B20994A2 /* ScrollableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102D259D6E9042B330C25AA1CC3B086 /* ScrollableSegmentedControl.swift */; };
-		90E29D68FD223EB434094292726A5EA6 /* ScrollableSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0577D00F4CB551283CEB7129F2FCD6 /* ScrollableSegmentedControl-dummy.m */; };
-		9D3B77D51A93F60619E12EC90F0F8943 /* ScrollableSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63677ABCA5FE47443CDCBDF60BD777E1 /* ScrollableSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E9EBB91AE05D4EE3D380D37B20994A2 /* ScrollableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D700A9FDB513FEC7AF0E810AE192D48 /* ScrollableSegmentedControl.swift */; };
+		22EA0A506A3F227FD2EF9A64E0E898A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2B1ABF73C713366BE79B48B12BB39589 /* Pods-InstagramClone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60992526F11ACB02B8925BFA232CB7E3 /* Pods-InstagramClone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		36D816F3D7B858AA29B8BAEFE2D96157 /* Pods-InstagramClone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3C3D3DE0E894078E28DCA2F18D5AF /* Pods-InstagramClone-dummy.m */; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFA31586131B7D18B3C3E180E05ABD /* DropDown+Appearance.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEF94008485AA7108DD60D912BDBB79 /* DropDownCell.xib */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43825B3BEA7DA0FE3CBD23322F2ACFEE /* DPDConstants.swift */; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34611EF09BF3A4DF996C6A547A19B67F /* DropDown.swift */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB482270485FA5179EEAD6385A1D4C9 /* DPDKeyboardListener.swift */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1130E65267BDDB37F2660009A4A9A459 /* DropDown-dummy.m */; };
+		90E29D68FD223EB434094292726A5EA6 /* ScrollableSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB2B676693576AF1688B288358A81A /* ScrollableSegmentedControl-dummy.m */; };
+		9D3B77D51A93F60619E12EC90F0F8943 /* ScrollableSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 559F831A138ACCAA79136DC8D2D9D45B /* ScrollableSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48992D2691BD17BF3E1E0C7B57EE67 /* DPDUIView+Extension.swift */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3014E34A080E1681DA1700B9A4D5336 /* DropDownCell.swift */; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7EE4A19FA52EF5690D254221253038 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		86D2F03A8C1D6F894252BB88220BA9B3 /* PBXContainerItemProxy */ = {
+		3A2390B69C72F2CD6904C557A7D5EB26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8EF03FFDDD4B9017D2CBE7F1C431A022;
 			remoteInfo = ScrollableSegmentedControl;
 		};
+		63E7CA7F93CE0BAACFE03AF30EA01166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1102D259D6E9042B330C25AA1CC3B086 /* ScrollableSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableSegmentedControl.swift; path = ScrollableSegmentedControl/ScrollableSegmentedControl.swift; sourceTree = "<group>"; };
+		0BF5275DB327AA73DED9EB663537AE38 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		1130E65267BDDB37F2660009A4A9A459 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		12A3B11B71280ABED8CD98792617D975 /* ScrollableSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		18C07F842066BCF5AB7D747E5A8EF861 /* ScrollableSegmentedControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableSegmentedControl.debug.xcconfig; sourceTree = "<group>"; };
+		1C0720EFC717C8823136FBE8173EB7AB /* ScrollableSegmentedControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollableSegmentedControl-Info.plist"; sourceTree = "<group>"; };
+		1E48992D2691BD17BF3E1E0C7B57EE67 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		1FA2B487BBBD7CF2D06ABE03E4F60A1C /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 		2748BCA90D1EFD810E43B2008D67BCBF /* ScrollableSegmentedControl */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableSegmentedControl; path = ScrollableSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29549F0C53BCEF49832498192BD66904 /* Pods-InstagramClone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstagramClone.modulemap"; sourceTree = "<group>"; };
+		2BB482270485FA5179EEAD6385A1D4C9 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		2D700A9FDB513FEC7AF0E810AE192D48 /* ScrollableSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableSegmentedControl.swift; path = ScrollableSegmentedControl/ScrollableSegmentedControl.swift; sourceTree = "<group>"; };
+		2D7EE4A19FA52EF5690D254221253038 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		32AE74A1C1D711BD69E09726AE78B204 /* Pods-InstagramClone-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstagramClone-Info.plist"; sourceTree = "<group>"; };
+		34611EF09BF3A4DF996C6A547A19B67F /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		3A5C09F96F2985267B8E74293A00C0F8 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
 		3F5329E7DC8354F6B43035B470C7FDA1 /* Pods-InstagramClone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstagramClone-frameworks.sh"; sourceTree = "<group>"; };
+		43825B3BEA7DA0FE3CBD23322F2ACFEE /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		45DE7A2FA81BD31F176D21DD8BD417D3 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
 		5284E9FB26EE95AE70BC35081862EAE6 /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
+		559F831A138ACCAA79136DC8D2D9D45B /* ScrollableSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		56EFA31586131B7D18B3C3E180E05ABD /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
 		5BC3C3D3DE0E894078E28DCA2F18D5AF /* Pods-InstagramClone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstagramClone-dummy.m"; sourceTree = "<group>"; };
+		5FB27E938E3DC330D6E0EC0D9F360E22 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		5FDB2B676693576AF1688B288358A81A /* ScrollableSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableSegmentedControl-dummy.m"; sourceTree = "<group>"; };
 		60992526F11ACB02B8925BFA232CB7E3 /* Pods-InstagramClone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstagramClone-umbrella.h"; sourceTree = "<group>"; };
-		63677ABCA5FE47443CDCBDF60BD777E1 /* ScrollableSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
-		68C8089F58C7FA47C015AC9222F0BBE2 /* ScrollableSegmentedControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableSegmentedControl.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		776068059DB866801CEC581BA9ECF37A /* Pods-InstagramClone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstagramClone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A64B2DBD10DB9DD0F90A48EA4E72049 /* Pods-InstagramClone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstagramClone-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F59007AD4E433422CBF0FD3207698BB /* Pods-InstagramClone */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-InstagramClone"; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		922643A7B8F89C59588F68138978A7D1 /* ScrollableSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableSegmentedControl.modulemap; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A07EBBE08736B74AD2F26913BB9EBE3D /* ScrollableSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollableSegmentedControl.modulemap; sourceTree = "<group>"; };
-		AB0577D00F4CB551283CEB7129F2FCD6 /* ScrollableSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableSegmentedControl-dummy.m"; sourceTree = "<group>"; };
-		B7023DC48493B854C0C09211EB114F1E /* ScrollableSegmentedControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollableSegmentedControl-Info.plist"; sourceTree = "<group>"; };
-		EEB2214748DC0AD35754CF6F13B27E4D /* ScrollableSegmentedControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableSegmentedControl.release.xcconfig; sourceTree = "<group>"; };
-		F36B91921157EB830088F3D4CDBE8B72 /* ScrollableSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		A3014E34A080E1681DA1700B9A4D5336 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		BB77882EE17D34865D7FE61133E4C04E /* ScrollableSegmentedControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableSegmentedControl.release.xcconfig; sourceTree = "<group>"; };
+		D3BB3273031F3643A5889F29BC6A34FC /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		FAEF94008485AA7108DD60D912BDBB79 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		48F93DB9606F1382E034B904BF23B2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA0A506A3F227FD2EF9A64E0E898A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51695A734EB81CCE9D1A70AF733D0FF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,11 +99,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AE13455FF1A18F45C3F9F9B40AEC7DD /* Frameworks */ = {
+		808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C28C6908EF41EB7E16688CCEBFB280A /* Foundation.framework in Frameworks */,
+				34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +127,37 @@
 			path = "Target Support Files/Pods-InstagramClone";
 			sourceTree = "<group>";
 		};
+		36138C22CDEEB0763B3DBEB8A3D3F5BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				922643A7B8F89C59588F68138978A7D1 /* ScrollableSegmentedControl.modulemap */,
+				5FDB2B676693576AF1688B288358A81A /* ScrollableSegmentedControl-dummy.m */,
+				1C0720EFC717C8823136FBE8173EB7AB /* ScrollableSegmentedControl-Info.plist */,
+				12A3B11B71280ABED8CD98792617D975 /* ScrollableSegmentedControl-prefix.pch */,
+				559F831A138ACCAA79136DC8D2D9D45B /* ScrollableSegmentedControl-umbrella.h */,
+				18C07F842066BCF5AB7D747E5A8EF861 /* ScrollableSegmentedControl.debug.xcconfig */,
+				BB77882EE17D34865D7FE61133E4C04E /* ScrollableSegmentedControl.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScrollableSegmentedControl";
+			sourceTree = "<group>";
+		};
 		3A0676B7E71363A25292721F9DB22D8B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				2DDC829EE6A6499A2ADE1ADBD73BA933 /* Pods-InstagramClone */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4335E5887AFC969AB815C07F9558F0B4 /* ScrollableSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				2D700A9FDB513FEC7AF0E810AE192D48 /* ScrollableSegmentedControl.swift */,
+				36138C22CDEEB0763B3DBEB8A3D3F5BF /* Support Files */,
+			);
+			name = ScrollableSegmentedControl;
+			path = ScrollableSegmentedControl;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -103,46 +168,39 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7C13B90374202463324470B07F64816B /* Support Files */ = {
+		5DB25B488701A6E3641DAD6EF0B95348 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A07EBBE08736B74AD2F26913BB9EBE3D /* ScrollableSegmentedControl.modulemap */,
-				AB0577D00F4CB551283CEB7129F2FCD6 /* ScrollableSegmentedControl-dummy.m */,
-				B7023DC48493B854C0C09211EB114F1E /* ScrollableSegmentedControl-Info.plist */,
-				F36B91921157EB830088F3D4CDBE8B72 /* ScrollableSegmentedControl-prefix.pch */,
-				63677ABCA5FE47443CDCBDF60BD777E1 /* ScrollableSegmentedControl-umbrella.h */,
-				68C8089F58C7FA47C015AC9222F0BBE2 /* ScrollableSegmentedControl.debug.xcconfig */,
-				EEB2214748DC0AD35754CF6F13B27E4D /* ScrollableSegmentedControl.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ScrollableSegmentedControl";
-			sourceTree = "<group>";
-		};
-		7D51BF09CF2229C3F4C50D7BE311E78C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				84C16705E64C9ED501B742AC0A0BE905 /* ScrollableSegmentedControl */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		84C16705E64C9ED501B742AC0A0BE905 /* ScrollableSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				1102D259D6E9042B330C25AA1CC3B086 /* ScrollableSegmentedControl.swift */,
-				7C13B90374202463324470B07F64816B /* Support Files */,
-			);
-			name = ScrollableSegmentedControl;
-			path = ScrollableSegmentedControl;
-			sourceTree = "<group>";
-		};
-		B9CA14F42AC8D1B358BE7F2F44295698 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
 				8F59007AD4E433422CBF0FD3207698BB /* Pods-InstagramClone */,
 				2748BCA90D1EFD810E43B2008D67BCBF /* ScrollableSegmentedControl */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6B72015A044DD5089162724B5F05B72E /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				43825B3BEA7DA0FE3CBD23322F2ACFEE /* DPDConstants.swift */,
+				2BB482270485FA5179EEAD6385A1D4C9 /* DPDKeyboardListener.swift */,
+				1E48992D2691BD17BF3E1E0C7B57EE67 /* DPDUIView+Extension.swift */,
+				34611EF09BF3A4DF996C6A547A19B67F /* DropDown.swift */,
+				56EFA31586131B7D18B3C3E180E05ABD /* DropDown+Appearance.swift */,
+				A3014E34A080E1681DA1700B9A4D5336 /* DropDownCell.swift */,
+				FCD9F24D8EBABB0C15D813BB4FC6BB45 /* Resources */,
+				D688EB9BD3936D065279B3FABB81B20F /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		C5EE0475A9938237C6BCC1010AEE7F13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B72015A044DD5089162724B5F05B72E /* DropDown */,
+				4335E5887AFC969AB815C07F9558F0B4 /* ScrollableSegmentedControl */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -150,8 +208,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7D51BF09CF2229C3F4C50D7BE311E78C /* Pods */,
-				B9CA14F42AC8D1B358BE7F2F44295698 /* Products */,
+				C5EE0475A9938237C6BCC1010AEE7F13 /* Pods */,
+				5DB25B488701A6E3641DAD6EF0B95348 /* Products */,
 				3A0676B7E71363A25292721F9DB22D8B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -164,9 +222,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D688EB9BD3936D065279B3FABB81B20F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5275DB327AA73DED9EB663537AE38 /* DropDown.modulemap */,
+				1130E65267BDDB37F2660009A4A9A459 /* DropDown-dummy.m */,
+				5FB27E938E3DC330D6E0EC0D9F360E22 /* DropDown-Info.plist */,
+				D3BB3273031F3643A5889F29BC6A34FC /* DropDown-prefix.pch */,
+				2D7EE4A19FA52EF5690D254221253038 /* DropDown-umbrella.h */,
+				3A5C09F96F2985267B8E74293A00C0F8 /* DropDown.debug.xcconfig */,
+				45DE7A2FA81BD31F176D21DD8BD417D3 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		FCD9F24D8EBABB0C15D813BB4FC6BB45 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF94008485AA7108DD60D912BDBB79 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0A5198C5A422B8A406FEF18AA9925037 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1ABF73C713366BE79B48B12BB39589 /* Pods-InstagramClone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CE91431E229797751455423C79CA4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F0D7DA180C65E253D1C150C753517FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,30 +272,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBAD137D07E22CFFDEE922FD1A860902 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				067D745F59D77FC163092713B96BA2F3 /* Pods-InstagramClone-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4185618EBE0A82C239610475673413E5 /* Pods-InstagramClone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA37B9764EAE86B0501A63F184B78B7D /* Build configuration list for PBXNativeTarget "Pods-InstagramClone" */;
+			buildConfigurationList = 681B7C4B53C9F8788231014D8D21AB1D /* Build configuration list for PBXNativeTarget "Pods-InstagramClone" */;
 			buildPhases = (
-				FBAD137D07E22CFFDEE922FD1A860902 /* Headers */,
-				2336D56BF2FAC9F84269E4BD7F9AF9E8 /* Sources */,
-				9AE13455FF1A18F45C3F9F9B40AEC7DD /* Frameworks */,
-				1C193A8DE7109C968772F230CBF78A40 /* Resources */,
+				0A5198C5A422B8A406FEF18AA9925037 /* Headers */,
+				A59E75905333D2AA107002381E5BB1CB /* Sources */,
+				48F93DB9606F1382E034B904BF23B2BC /* Frameworks */,
+				9F11E97FB7490FDDEB1EBDA22DD02DE9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F6716991758F57E319C94ADD86EDAED9 /* PBXTargetDependency */,
+				02461303FABCD00265BE2E0A391F5601 /* PBXTargetDependency */,
+				08FB30541077E999C25B82DD39005A7E /* PBXTargetDependency */,
 			);
 			name = "Pods-InstagramClone";
 			productName = Pods_InstagramClone;
@@ -223,6 +313,24 @@
 			productReference = 2748BCA90D1EFD810E43B2008D67BCBF /* ScrollableSegmentedControl */;
 			productType = "com.apple.product-type.framework";
 		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				97CE91431E229797751455423C79CA4F /* Headers */,
+				48864C435B3DB37698CF568C638CF98F /* Sources */,
+				808BE4E171BD75B6477EC2B77490C2B1 /* Frameworks */,
+				EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,10 +349,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B9CA14F42AC8D1B358BE7F2F44295698 /* Products */;
+			productRefGroup = 5DB25B488701A6E3641DAD6EF0B95348 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				4185618EBE0A82C239610475673413E5 /* Pods-InstagramClone */,
 				8EF03FFDDD4B9017D2CBE7F1C431A022 /* ScrollableSegmentedControl */,
 			);
@@ -252,13 +361,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C193A8DE7109C968772F230CBF78A40 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2BFCAB451CDE9DDFC542F020C4B50641 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,14 +368,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F11E97FB7490FDDEB1EBDA22DD02DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDE5B37A62BFF2F9A9BD2023B960CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2336D56BF2FAC9F84269E4BD7F9AF9E8 /* Sources */ = {
+		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E54794326C97CCABE3970CFE5930201 /* Pods-InstagramClone-dummy.m in Sources */,
+				74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */,
+				89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */,
+				B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */,
+				84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */,
+				515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */,
+				907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */,
+				BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59E75905333D2AA107002381E5BB1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D816F3D7B858AA29B8BAEFE2D96157 /* Pods-InstagramClone-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +420,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F6716991758F57E319C94ADD86EDAED9 /* PBXTargetDependency */ = {
+		02461303FABCD00265BE2E0A391F5601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 63E7CA7F93CE0BAACFE03AF30EA01166 /* PBXContainerItemProxy */;
+		};
+		08FB30541077E999C25B82DD39005A7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ScrollableSegmentedControl;
 			target = 8EF03FFDDD4B9017D2CBE7F1C431A022 /* ScrollableSegmentedControl */;
-			targetProxy = 86D2F03A8C1D6F894252BB88220BA9B3 /* PBXContainerItemProxy */;
+			targetProxy = 3A2390B69C72F2CD6904C557A7D5EB26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,7 +503,7 @@
 		};
 		397877106A1C9115A8DE6353D4356931 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEB2214748DC0AD35754CF6F13B27E4D /* ScrollableSegmentedControl.release.xcconfig */;
+			baseConfigurationReference = BB77882EE17D34865D7FE61133E4C04E /* ScrollableSegmentedControl.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -399,45 +536,9 @@
 			};
 			name = Release;
 		};
-		52E62511E8452E15A52B56D7BB185AAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA2B487BBBD7CF2D06ABE03E4F60A1C /* Pods-InstagramClone.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		67CF6EBB879377C092EF745B28ECD8B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68C8089F58C7FA47C015AC9222F0BBE2 /* ScrollableSegmentedControl.debug.xcconfig */;
+			baseConfigurationReference = 18C07F842066BCF5AB7D747E5A8EF861 /* ScrollableSegmentedControl.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -469,7 +570,7 @@
 			};
 			name = Debug;
 		};
-		6D3B7A36AF8DEAD699085F071766F714 /* Release */ = {
+		9A52652D10E630994CBD87CF38F7B9BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5284E9FB26EE95AE70BC35081862EAE6 /* Pods-InstagramClone.release.xcconfig */;
 			buildSettings = {
@@ -505,6 +606,77 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C24518E891FAA59668669823639498EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45DE7A2FA81BD31F176D21DD8BD417D3 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2BD7EC2ADCAAA970C59B4075DCAA4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA2B487BBBD7CF2D06ABE03E4F60A1C /* Pods-InstagramClone.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -568,6 +740,40 @@
 			};
 			name = Release;
 		};
+		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5C09F96F2985267B8E74293A00C0F8 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,11 +795,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA37B9764EAE86B0501A63F184B78B7D /* Build configuration list for PBXNativeTarget "Pods-InstagramClone" */ = {
+		53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52E62511E8452E15A52B56D7BB185AAD /* Debug */,
-				6D3B7A36AF8DEAD699085F071766F714 /* Release */,
+				E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */,
+				C24518E891FAA59668669823639498EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681B7C4B53C9F8788231014D8D21AB1D /* Build configuration list for PBXNativeTarget "Pods-InstagramClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2BD7EC2ADCAAA970C59B4075DCAA4A1 /* Debug */,
+				9A52652D10E630994CBD87CF38F7B9BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

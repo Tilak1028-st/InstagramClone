@@ -6,5 +6,6 @@ target 'InstagramClone' do
 
   # Pods for InstagramClone
 pod 'ScrollableSegmentedControl'
+pod 'DropDown', '~> 2.3.13'
 
 end

@@ -10,6 +10,8 @@ import ScrollableSegmentedControl
 
 class ProfileViewController: UIViewController {
 
+    
+    @IBOutlet weak var postView: UIView!
     @IBOutlet weak var addfollowerButton: UIButton!
     @IBOutlet weak var editProfileButton: UIButton!
     @IBOutlet weak var barButtonItem: UIBarButtonItem!
@@ -19,6 +21,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(UIScreen.main.bounds.width)
         barButtonItem.setTitleTextAttributes([ NSAttributedString.Key.font: UIFont(name: "Arial", size: 23)!], for: UIControl.State.normal)
         self.profileimageView.layer.borderWidth = 1
         self.profileimageView.layer.borderColor = UIColor.gray.cgColor
@@ -48,8 +51,10 @@ class ProfileViewController: UIViewController {
     }
     
     @objc func segmentSelected(sender:ScrollableSegmentedControl) {
+       
+        let estimatorPhotoVc = storyboard?.instantiateViewController(withIdentifier: Constant.postTagVc) as! PostTagViewController
         if sender.selectedSegmentIndex == 0 {
-            print("Hety")
+            
         }
         else {
             print("Hello")

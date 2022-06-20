@@ -73,7 +73,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gAS-OF-76v" firstAttribute="centerY" secondItem="rj3-yB-ocD" secondAttribute="centerY" id="53u-Eh-h4K"/>
+                            <constraint firstItem="gAS-OF-76v" firstAttribute="centerY" secondItem="yM0-lh-VcF" secondAttribute="centerY" id="53u-Eh-h4K"/>
                             <constraint firstItem="gAS-OF-76v" firstAttribute="centerX" secondItem="4oB-ca-T0S" secondAttribute="centerX" id="9DM-Ad-1dG"/>
                             <constraint firstItem="rj3-yB-ocD" firstAttribute="bottom" secondItem="o9j-RJ-mA1" secondAttribute="bottom" id="DxA-KB-gkb"/>
                             <constraint firstItem="o9j-RJ-mA1" firstAttribute="leading" secondItem="4oB-ca-T0S" secondAttribute="leading" constant="10" id="Eue-Lf-rwQ"/>
