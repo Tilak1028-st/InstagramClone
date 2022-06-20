@@ -79,16 +79,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="house" catalog="system" selectedImage="house.fill" id="CEr-kH-DtR"/>
-                    <navigationItem key="navigationItem" id="LbS-u5-FFm">
-                        <rightBarButtonItems>
-                            <barButtonItem image="icons8-sent-30" id="MSH-PV-cw9">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                            <barButtonItem image="icons8-stories-25" id="HjU-Sk-jmF">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="LbS-u5-FFm"/>
                     <connections>
                         <outlet property="feedTableView" destination="3BJ-02-EoF" id="lfF-Oo-UFi"/>
                         <outlet property="storyCollectionView" destination="2zD-RB-f3H" id="PHX-jg-d4m"/>
@@ -546,7 +537,6 @@
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="icons8-sent-30" width="30" height="30"/>
         <image name="icons8-stories-25" width="25" height="25"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>

@@ -112,6 +112,8 @@ public final class DropDown: UIView {
 	See `Direction` enum for more info.
 	*/
 	public var direction = Direction.any
+    
+    public var imageName: String?
 
 	/**
 	The offset point relative to `anchorView` when the drop down is shown above the anchor view.
@@ -1051,7 +1053,20 @@ extension DropDown: UITableViewDataSource, UITableViewDelegate {
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: DPDConstant.ReusableIdentifier.DropDownCell, for: indexPath) as! DropDownCell
 		let index = (indexPath as NSIndexPath).row
-
+        
+        if indexPath.row == 1 {
+            cell.labelImageView.image = UIImage(named: "icons8-video-player-25")
+        }
+        else if indexPath.row == 2 {
+            cell.labelImageView.image = UIImage(named: "icons8-rectangle-25")
+        }
+        else if indexPath.row == 3 {
+            cell.labelImageView.image = UIImage(named: "icons8-wifi-25")
+        }
+        else {
+            cell.labelImageView.image = UIImage(named: "icons8-stories-25")
+        }
+       
 		configureCell(cell, at: index)
 
 		return cell
@@ -1067,6 +1082,7 @@ extension DropDown: UITableViewDataSource, UITableViewDelegate {
 		cell.selectedBackgroundColor = selectionBackgroundColor
         cell.highlightTextColor = selectedTextColor
         cell.normalTextColor = textColor
+        
 		
 		if let cellConfiguration = cellConfiguration {
 			cell.optionLabel.text = cellConfiguration(index, dataSource[index])

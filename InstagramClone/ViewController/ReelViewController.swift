@@ -40,7 +40,7 @@ extension ReelViewController: UITableViewDelegate, UITableViewDataSource
         UIView.animate(withDuration: 12.0, delay: 1, options: ([.curveLinear, .repeat]), animations: {() -> Void in
             cell.marqueeLabel.center = CGPoint.init(x: 35 - cell.marqueeLabel.bounds.size.width / 2, y: cell.marqueeLabel.center.y)
                }, completion:  { _ in })
-        cell.reelImageView.image = UIImage.init(named: images[indexPath.row])
+    //    cell.reelImageView.image = UIImage.init(named: images[indexPath.row])
         return cell
     }
     

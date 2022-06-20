@@ -3,4 +3,114 @@
    uuid = "CD5605B2-BB76-4460-97F8-FB644D078E68"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/DropDown/DropDown/src/DropDown.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "DropDown"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6 - 3a10c7bf6f873af6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropDown.DropDown.imageName.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "DropDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcs213/Documents/Projects/InstagramClone/Pods/DropDown/DropDown/src/DropDown.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "103">
+               </Location>
+               <Location
+                  uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6 - 2143e66ed8220ad2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropDown.DropDown.imageName.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "DropDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcs213/Documents/Projects/InstagramClone/Pods/DropDown/DropDown/src/DropDown.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6 - 5be693fdf14129e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropDown.DropDown.imageName.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "DropDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcs213/Documents/Projects/InstagramClone/Pods/DropDown/DropDown/src/DropDown.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6 - df45f7707e7c575d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropDown.DropDown.imageName.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DropDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcs213/Documents/Projects/InstagramClone/Pods/DropDown/DropDown/src/DropDown.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6 - 8da77923bd0f7b3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropDown.DropDown.init(frame: __C.CGRect) -&gt; DropDown.DropDown"
+                  moduleName = "DropDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcs213/Documents/Projects/InstagramClone/Pods/DropDown/DropDown/src/DropDown.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "1051">
+               </Location>
+               <Location
+                  uuid = "3ADEF764-B6B0-46E3-B6C3-C047AA8C7DD6 - 8950b5ae5ac23fbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropDown.DropDown.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DropDown.DropDown&gt;"
+                  moduleName = "DropDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pcs213/Documents/Projects/InstagramClone/Pods/DropDown/DropDown/src/DropDown.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "766">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -11,12 +11,13 @@ import UIKit
 open class DropDownCell: UITableViewCell {
 		
 	//UI
-	@IBOutlet open weak var optionLabel: UILabel!
+    
+    @IBOutlet weak var labelImageView: UIImageView!
+    @IBOutlet open weak var optionLabel: UILabel!
 	
 	var selectedBackgroundColor: UIColor?
     var highlightTextColor: UIColor?
     var normalTextColor: UIColor?
-
 }
 
 //MARK: - UI
@@ -25,7 +26,6 @@ extension DropDownCell {
 	
 	override open func awakeFromNib() {
 		super.awakeFromNib()
-		
 		backgroundColor = .clear
 	}
 	

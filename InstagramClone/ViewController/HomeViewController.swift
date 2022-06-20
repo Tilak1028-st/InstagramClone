@@ -6,25 +6,75 @@
 //
 
 import UIKit
+import DropDown
 
 class HomeViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var storyCollectionView: UICollectionView!
     @IBOutlet weak var feedTableView: UITableView!
+    
+    var storyDropDown = DropDown()
+    let storyOption = ["Story", "Reel", "Post", "Live"]
+   
+    
+    
+    let viewFN = UIView(frame: CGRect.init(x: 0, y: 0, width: 80, height: 40))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addLeftBarIcon(named: "Instagram_logo.svg")
         storyCollectionView.register(UINib.init(nibName: Constant.storyCollectionCell, bundle: nil), forCellWithReuseIdentifier: Constant.storyCollectionCell)
         tableConfiguration()
+        storyDropDown.dataSource = storyOption
+        setDropDown()
+        setnavigationRightItem()
     }
     
-//MARK: - Function for FeedTableView SetUp.
+    func setnavigationRightItem() {
+        viewFN.backgroundColor = UIColor.white
+        let button1 = UIButton(frame: CGRect.init(x: 0, y: 0, width: 40, height: 40))
+        button1.setImage(UIImage(named: "icons8-stories-25"), for: .normal)
+        button1.setTitle("one", for: .normal)
+        
+        button1.addTarget(self, action: #selector(self.didTapOnRightButton), for: .touchUpInside)
+        
+        let button2 = UIButton(frame: CGRect.init(x: 40, y: 0, width: 40, height: 40))
+        button2.setImage(UIImage(named: "message_icon"), for: .normal)
+        button2.setTitle("tow", for: .normal)
+        button2.addTarget(self, action: #selector(self.didTapMessageButton), for: .touchUpInside)
+        
+        viewFN.addSubview(button1)
+        viewFN.addSubview(button2)
+        
+        
+        let rightBarButton = UIBarButtonItem(customView: viewFN)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    @objc func didTapMessageButton() {
+        let activityVc = self.storyboard?.instantiateViewController(withIdentifier: "ActivityViewController") as! ActivityViewController
+        self.navigationController?.pushViewController(activityVc, animated: true)
+    }
+    
+    @objc func didTapOnRightButton() {
+        storyDropDown.show()
+    }
+    
+    func setDropDown() {
+        storyDropDown.anchorView = viewFN
+        storyDropDown.bottomOffset = CGPoint(x: 0, y:(storyDropDown.anchorView?.plainView.bounds.height)!)
+        storyDropDown.topOffset = CGPoint(x: 0, y:-(storyDropDown.anchorView?.plainView.bounds.height)!)
+        storyDropDown.direction = .any
+        storyDropDown.backgroundColor = UIColor.white
+    }
+    
+    //MARK: - Function for FeedTableView SetUp.
     
     func tableConfiguration()
     {
         feedTableView.register(UINib.init(nibName: Constant.feedTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.feedTableViewCell)
-   
+        
         self.feedTableView.separatorColor = UIColor.clear
         let dummyViewHeight = CGFloat(40)
         
@@ -32,7 +82,7 @@ class HomeViewController: UIViewController {
         self.feedTableView.contentInset = UIEdgeInsets(top: -dummyViewHeight, left: 0, bottom: 0, right: 0)
     }
     
-// MARK:  - Function left Navigationbar item.
+    // MARK:  - Function left Navigationbar item.
     
     func addLeftBarIcon(named:String)
     {
@@ -47,6 +97,11 @@ class HomeViewController: UIViewController {
         widthConstraint.isActive = true
         navigationItem.leftBarButtonItem =  imageItem
     }
+    
+    @IBAction func openStoryDropDown(_ sender: Any) {
+        
+    }
+    
     
 }
 
@@ -85,12 +140,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout
         let collectionHeight = collectionView.bounds.height
         return CGSize(width: collectionWidth/4, height: collectionHeight)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
     {
         return 0
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
     {
         return 0
@@ -125,7 +180,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
         let headerView = Bundle.main.loadNibNamed(Constant.feedHeadercell, owner: self, options: nil)?.first
         return headerView as? UIView
     }
-
+    
 }
 
 //MARK: - Extension for growing textview height as new text entered.
@@ -136,7 +191,7 @@ extension HomeViewController: GrowingCellProtocol {
     {
         let size = textView.bounds.size
         let newSize = feedTableView.sizeThatFits(CGSize(width: size.width,
-                                                         height: CGFloat.greatestFiniteMagnitude))
+                                                        height: CGFloat.greatestFiniteMagnitude))
         if size.height != newSize.height {
             UIView.setAnimationsEnabled(false)
             feedTableView?.beginUpdates()
