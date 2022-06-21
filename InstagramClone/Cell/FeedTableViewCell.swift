@@ -9,28 +9,50 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
     
-    weak var growingCellDelegate: GrowingCellProtocol?
+//    weak var growingCellDelegate: GrowingCellProtocol?
     
+    @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var postCollectionView: UICollectionView!
     @IBOutlet weak var pageController: UIPageControl!
+    @IBOutlet weak var likeImagewidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var likeImageView: UIImageView!
     
     let images: [String] = ["pk1.jpeg","pk2.jpeg","pk3.jpeg","pk4.jpeg","pk5.jpeg"]
     var currentPage = 0
     
+    lazy var likeAnimator = LikeAnimator(container: contentView, layoutConstraint: likeImagewidthConstraint)
+    
+    lazy var doubleTapRecognizer: UITapGestureRecognizer = {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didDoubletap))
+        tapRecognizer.numberOfTapsRequired = 2
+        return tapRecognizer
+    }()
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        commentTextView.delegate = self
+        
         self.pageController.numberOfPages = images.count
         postCollectionView.register(UINib(nibName: Constant.postCollectionView, bundle: nil), forCellWithReuseIdentifier: Constant.postCollectionView)
         
         self.postCollectionView.reloadData()
+        self.postCollectionView.addGestureRecognizer(doubleTapRecognizer)
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+   
+    
+    @objc func didDoubletap() {
+        likeAnimator.animate {
+            self.likeImageView.image = UIImage(systemName: "heart.fill")
+        }
     }
 }
 
@@ -73,20 +95,20 @@ extension FeedTableViewCell: UICollectionViewDelegateFlowLayout
     }
 }
 
-//MARK: - Extension for textview growing height
-
-extension FeedTableViewCell: UITextViewDelegate {
-    
-    func textViewDidChange(_ textView: UITextView)
-    {
-        if let deletate = growingCellDelegate {
-            deletate.updateHeightOfRow(self, textView)
-        }
-    }
-}
+////MARK: - Extension for textview growing height
+//
+//extension FeedTableViewCell: UITextViewDelegate {
+//
+//    func textViewDidChange(_ textView: UITextView)
+//    {
+//        if let deletate = growingCellDelegate {
+//            deletate.updateHeightOfRow(self, textView)
+//        }
+//    }
+//}
 
 //MARK: - Protocol for textview growing height
 
-protocol GrowingCellProtocol: AnyObject {
-    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView)
-}
+//protocol GrowingCellProtocol: AnyObject {
+//    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView)
+//}

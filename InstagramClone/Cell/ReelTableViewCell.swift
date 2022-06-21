@@ -10,8 +10,8 @@ import AVFoundation
 
 class ReelTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var likeIconImage: UIImageView!
     @IBOutlet weak var reelVideoView: UIView!
-    //  @IBOutlet weak var reelImageView: UIImageView!
     @IBOutlet weak var marqueeLabel: UILabel!
     @IBOutlet weak var likeImageView: UIImageView!
     @IBOutlet weak var likeImageWidthConstraint: NSLayoutConstraint!
@@ -24,6 +24,11 @@ class ReelTableViewCell: UITableViewCell {
         return tapRecognizer
     }()
     
+    lazy var singleLikeTapRecognizer: UITapGestureRecognizer = {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didDoubletap))
+        tapRecognizer.numberOfTapsRequired = 1
+        return tapRecognizer
+    }()
     
     var player: AVPlayer!
     var playerLayer: AVPlayerLayer!
@@ -42,6 +47,7 @@ class ReelTableViewCell: UITableViewCell {
         
         self.reelVideoView.isUserInteractionEnabled = true
         self.reelVideoView.addGestureRecognizer(doubleTapRecognizer)
+        self.likeIconImage.addGestureRecognizer(singleLikeTapRecognizer)
     }
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -53,7 +59,7 @@ class ReelTableViewCell: UITableViewCell {
             self.likeImageView.image = UIImage(systemName: "heart.fill")
         }
     }
-    
+   
     //    @objc
     func playPressed() {
         if isVideoPlaying

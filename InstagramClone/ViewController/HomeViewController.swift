@@ -20,6 +20,11 @@ class HomeViewController: UIViewController {
     
     
     let viewFN = UIView(frame: CGRect.init(x: 0, y: 0, width: 80, height: 40))
+    lazy var commentGesture: UITapGestureRecognizer = {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(commentTap))
+        tapRecognizer.numberOfTapsRequired = 1
+        return tapRecognizer
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +40,13 @@ class HomeViewController: UIViewController {
         viewFN.backgroundColor = UIColor.white
         let button1 = UIButton(frame: CGRect.init(x: 0, y: 0, width: 40, height: 40))
         button1.setImage(UIImage(named: "icons8-stories-25"), for: .normal)
-        button1.setTitle("one", for: .normal)
+        button1.setTitle("", for: .normal)
         
         button1.addTarget(self, action: #selector(self.didTapOnRightButton), for: .touchUpInside)
         
         let button2 = UIButton(frame: CGRect.init(x: 40, y: 0, width: 40, height: 40))
         button2.setImage(UIImage(named: "message_icon"), for: .normal)
-        button2.setTitle("tow", for: .normal)
+        button2.setTitle("", for: .normal)
         button2.addTarget(self, action: #selector(self.didTapMessageButton), for: .touchUpInside)
         
         viewFN.addSubview(button1)
@@ -102,7 +107,11 @@ class HomeViewController: UIViewController {
         
     }
     
-    
+    @objc func commentTap() {
+        let commentVc = storyboard?.instantiateViewController(withIdentifier: "CommentViewController") as! CommentViewController
+        self.navigationController?.pushViewController(commentVc, animated: true)
+        
+    }
 }
 
 // MARK: - Extension for CollectionView Delegate and Datasource methods.
@@ -170,8 +179,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedTableViewCell, for: indexPath) as! FeedTableViewCell
-        cell.growingCellDelegate = self
+//        cell.growingCellDelegate = self
         cell.postCollectionView.tag = indexPath.row
+        cell.commentLabel.addGestureRecognizer(commentGesture)
         return cell
     }
     
@@ -185,21 +195,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 
 //MARK: - Extension for growing textview height as new text entered.
 
-extension HomeViewController: GrowingCellProtocol {
-    
-    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView)
-    {
-        let size = textView.bounds.size
-        let newSize = feedTableView.sizeThatFits(CGSize(width: size.width,
-                                                        height: CGFloat.greatestFiniteMagnitude))
-        if size.height != newSize.height {
-            UIView.setAnimationsEnabled(false)
-            feedTableView?.beginUpdates()
-            feedTableView?.endUpdates()
-            UIView.setAnimationsEnabled(true)
-            if let thisIndexPath = feedTableView.indexPath(for: cell) {
-                feedTableView.scrollToRow(at: thisIndexPath, at: .bottom, animated: false)
-            }
-        }
-    }
-}
+//extension HomeViewController: GrowingCellProtocol {
+//
+//    func updateHeightOfRow(_ cell: FeedTableViewCell, _ textView: UITextView)
+//    {
+//        let size = textView.bounds.size
+//        let newSize = feedTableView.sizeThatFits(CGSize(width: size.width,
+//                                                        height: CGFloat.greatestFiniteMagnitude))
+//        if size.height != newSize.height {
+//            UIView.setAnimationsEnabled(false)
+//            feedTableView?.beginUpdates()
+//            feedTableView?.endUpdates()
+//            UIView.setAnimationsEnabled(true)
+//            if let thisIndexPath = feedTableView.indexPath(for: cell) {
+//                feedTableView.scrollToRow(at: thisIndexPath, at: .bottom, animated: false)
+//            }
+//        }
+//    }
+//}

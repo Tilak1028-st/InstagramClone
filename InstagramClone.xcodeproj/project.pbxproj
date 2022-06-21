@@ -38,6 +38,7 @@
 		82897BC3285C35B200CD01FE /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */; };
 		82897BC4285C35B200CD01FE /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */; };
 		82D69142286086A30062032B /* LikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D69141286086A30062032B /* LikeAnimator.swift */; };
+		82D691442860A7C90062032B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D691432860A7C90062032B /* CommentViewController.swift */; };
 		CFF3BBBFB27D412C65B65E30 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04EA0A2D162FDD69334EE25 /* Pods_InstagramClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		82897BC1285C35B200CD01FE /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		82897BC2285C35B200CD01FE /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		82D69141286086A30062032B /* LikeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimator.swift; sourceTree = "<group>"; };
+		82D691432860A7C90062032B /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		C04EA0A2D162FDD69334EE25 /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				8271E8FD285A0503005950B0 /* ActivityViewController.swift */,
 				824A9DD1285D880500898AD8 /* Profile ViewController */,
 				822464D3285CA65C001BE828 /* StoryViewController.swift */,
+				82D691432860A7C90062032B /* CommentViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D691442860A7C90062032B /* CommentViewController.swift in Sources */,
 				8271E904285A0503005950B0 /* SearchViewController.swift in Sources */,
 				8271E906285A0503005950B0 /* ReelViewController.swift in Sources */,
 				82897BC3285C35B200CD01FE /* ActivityTableViewCell.swift in Sources */,
