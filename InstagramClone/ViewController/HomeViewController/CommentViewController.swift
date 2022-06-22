@@ -44,17 +44,20 @@ class CommentViewController: UIViewController {
         arrComments.append(CommentSection.init(2, comment: "skrgjehrjgj"))
     }
     
+    //MARK: - Function for replying someone comment.
     @objc func replyButtonClicked( _ sender: UITapGestureRecognizer) {
         replySelectedSection = sender.view?.tag
         commentTextField.becomeFirstResponder()
     }
     
+    //MARK:  - Function for replying cooment's cooment.
     @objc func replyRowClicked(_ sender: UITapGestureRecognizer) {
         replySelectedRow = sender.view?.tag
         replySelectedSection = Int(sender.accessibilityHint ?? "0")
         commentTextField.becomeFirstResponder()
     }
     
+    //MARK: -Function for post comment.
     @IBAction func postComment(_ sender: UIButton) {
        
         if let section = replySelectedSection, let msg = commentTextField.text {

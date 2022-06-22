@@ -21,15 +21,21 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
+    }
+    
+    //MARK:  Function for setup of view.
+    private func setUpView() {
         addLeftBarIcon(named: "Instagram_logo.svg")
         storyCollectionView.register(UINib.init(nibName: Constant.storyCollectionCell, bundle: nil), forCellWithReuseIdentifier: Constant.storyCollectionCell)
+        
         tableConfiguration()
         storyDropDown.dataSource = storyOption
         setDropDown()
         setnavigationRightItem()
-        
     }
     
+    //MARK: Function for setup of rightNavigation bar.
     func setnavigationRightItem() {
         viewFN.backgroundColor = UIColor.white
         let button1 = UIButton(frame: CGRect.init(x: 0, y: 0, width: 40, height: 40))
@@ -46,11 +52,11 @@ class HomeViewController: UIViewController {
         viewFN.addSubview(button1)
         viewFN.addSubview(button2)
         
-        
         let rightBarButton = UIBarButtonItem(customView: viewFN)
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
+    //MARK: -function to navigate to messge scrren on click.
     @objc func didTapMessageButton() {
         let activityVc = self.storyboard?.instantiateViewController(withIdentifier: "ActivityViewController") as! ActivityViewController
         self.navigationController?.pushViewController(activityVc, animated: true)
@@ -60,6 +66,7 @@ class HomeViewController: UIViewController {
         storyDropDown.show()
     }
     
+    //MARK:  -Function for story dropdown.
     func setDropDown() {
         storyDropDown.anchorView = viewFN
         storyDropDown.bottomOffset = CGPoint(x: 0, y:(storyDropDown.anchorView?.plainView.bounds.height)!)
@@ -69,14 +76,14 @@ class HomeViewController: UIViewController {
     }
     
     //MARK: - Function for FeedTableView SetUp.
-    
     func tableConfiguration()
     {
         feedTableView.register(UINib.init(nibName: Constant.feedTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.feedTableViewCell)
         
+        feedTableView.register(UINib.init(nibName: Constant.feedHeadercell, bundle: nil), forCellReuseIdentifier: Constant.feedHeadercell)
+        
         self.feedTableView.separatorColor = UIColor.clear
         let dummyViewHeight = CGFloat(40)
-        
         self.feedTableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.feedTableView.bounds.size.width, height: dummyViewHeight))
         self.feedTableView.contentInset = UIEdgeInsets(top: -dummyViewHeight, left: 0, bottom: 0, right: 0)
     }
@@ -101,25 +108,10 @@ class HomeViewController: UIViewController {
         
     }
     
-    @objc func commentTap() {
-        let commentVc = storyboard?.instantiateViewController(withIdentifier: Constant
-                                                                .commentVc) as! CommentViewController
-        self.navigationController?.pushViewController(commentVc, animated: true)
-    }
     
-    @objc  func showActionSheet()
-    {
-        let shareVc = storyboard?.instantiateViewController(withIdentifier: Constant
-                                                                .shareVc) as! ShareViewController
-        
-        if let sheet = shareVc.sheetPresentationController {
-            sheet.detents = [ .medium(), .large()]
-        }
-        present(shareVc, animated: true, completion: nil)
-    }
 }
 
-// MARK: - Extension for CollectionView Delegate and Datasource methods.
+// MARK: - Extension for StoryCollectionView Delegate and Datasource methods.
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource
 {
@@ -144,7 +136,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
-// MARK: - Extension for CollectionView Delegate Flowlayout.
+// MARK: - Extension for Post Images CollectionView Delegate Flowlayout.
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout
 {
@@ -167,7 +159,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout
     
 }
 
-// MARK: - Extension for TableView delegate and Datasource methods.
+// MARK: - Extension for PostTableView delegate and Datasource methods.
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource
 {
@@ -192,17 +184,62 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
         labelTapRecognizer.numberOfTapsRequired = 1
         cell.commentLabel.addGestureRecognizer(labelTapRecognizer)
         cell.commentImageView.addGestureRecognizer(tapRecognizer)
-        let shareTaprecognizer = UITapGestureRecognizer(target: self, action: #selector(showActionSheet))
+        let shareTaprecognizer = UITapGestureRecognizer(target: self, action: #selector(openSheetToSharePost))
         cell.shareImageView.addGestureRecognizer(shareTaprecognizer)
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     {
-        let headerView = Bundle.main.loadNibNamed(Constant.feedHeadercell, owner: self, options: nil)?.first
-        return headerView as? UIView
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedHeadercell) as! FeedHeaderTableViewCell
+        let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(openMoreOptions(_:)))
+        imageTapRecognizer.numberOfTapsRequired = 1
+        cell.shareImageView.addGestureRecognizer(imageTapRecognizer)
+        let userNameLabelTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(goToProfileScreen(_:)))
+        userNameLabelTapRecognizer.numberOfTapsRequired = 1
+        cell.userNameLabel.addGestureRecognizer(userNameLabelTapRecognizer)
+        return cell
     }
 }
+
+extension HomeViewController
+{
+    //MARK:  -Function to navigate to comment screen.
+    @objc func commentTap() {
+        let commentVc = storyboard?.instantiateViewController(withIdentifier: Constant
+                                                                .commentVc) as! CommentViewController
+        self.navigationController?.pushViewController(commentVc, animated: true)
+    }
+    
+    //MARK: - Function to share Instagram Post
+    @objc  func openSheetToSharePost()
+    {
+        let shareVc = storyboard?.instantiateViewController(withIdentifier: Constant
+                                                                .shareVc) as! ShareViewController
+        
+        if let sheet = shareVc.sheetPresentationController {
+            sheet.detents = [ .medium(), .large()]
+        }
+        present(shareVc, animated: true, completion: nil)
+    }
+    
+    @objc func openMoreOptions(_ sender: UITapGestureRecognizer)
+    {
+        let text = "This is the text...."
+        let image = UIImage(named: "pk1")
+        let shareAll = [text , image!] as [Any]
+        let activityViewController = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    @objc func goToProfileScreen( _ sender: UITapGestureRecognizer)
+    {
+        let profileVc = storyboard?.instantiateViewController(withIdentifier: Constant.profileVc) as! ProfileViewController
+        self.navigationController?.pushViewController(profileVc, animated: true)
+    }
+}
+
 
 //MARK: - Extension for growing textview height as new text entered.
 

@@ -10,6 +10,7 @@ import UIKit
 class FeedHeaderTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var shareImageView: UIImageView!
     @IBOutlet weak var userImageView: UIImageView!
     
@@ -21,4 +22,8 @@ class FeedHeaderTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    @IBAction func sharePost(_ sender: Any) {
+    }
+    
 }
