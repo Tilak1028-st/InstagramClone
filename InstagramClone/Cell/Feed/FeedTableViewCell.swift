@@ -11,9 +11,9 @@ class FeedTableViewCell: UITableViewCell {
     
 //    weak var growingCellDelegate: GrowingCellProtocol?
     
+    @IBOutlet weak var commentImageView: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var postCollectionView: UICollectionView!
     @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var likeImagewidthConstraint: NSLayoutConstraint!

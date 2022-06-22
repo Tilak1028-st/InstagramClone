@@ -16,15 +16,8 @@ class HomeViewController: UIViewController {
     
     var storyDropDown = DropDown()
     let storyOption = ["Story", "Reel", "Post", "Live"]
-   
-    
-    
     let viewFN = UIView(frame: CGRect.init(x: 0, y: 0, width: 80, height: 40))
-    lazy var commentGesture: UITapGestureRecognizer = {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(commentTap))
-        tapRecognizer.numberOfTapsRequired = 1
-        return tapRecognizer
-    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +27,7 @@ class HomeViewController: UIViewController {
         storyDropDown.dataSource = storyOption
         setDropDown()
         setnavigationRightItem()
+        
     }
     
     func setnavigationRightItem() {
@@ -108,7 +102,8 @@ class HomeViewController: UIViewController {
     }
     
     @objc func commentTap() {
-        let commentVc = storyboard?.instantiateViewController(withIdentifier: "CommentViewController") as! CommentViewController
+        let commentVc = storyboard?.instantiateViewController(withIdentifier: Constant
+                                                                .commentVc) as! CommentViewController
         self.navigationController?.pushViewController(commentVc, animated: true)
         
     }
@@ -179,9 +174,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedTableViewCell, for: indexPath) as! FeedTableViewCell
-//        cell.growingCellDelegate = self
         cell.postCollectionView.tag = indexPath.row
-        cell.commentLabel.addGestureRecognizer(commentGesture)
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(commentTap))
+        tapRecognizer.numberOfTapsRequired = 1
+        let labelTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(commentTap))
+        labelTapRecognizer.numberOfTapsRequired = 1
+        cell.commentLabel.addGestureRecognizer(labelTapRecognizer)
+        cell.commentImageView.addGestureRecognizer(tapRecognizer)
         return cell
     }
     
@@ -190,7 +190,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
         let headerView = Bundle.main.loadNibNamed(Constant.feedHeadercell, owner: self, options: nil)?.first
         return headerView as? UIView
     }
-    
 }
 
 //MARK: - Extension for growing textview height as new text entered.

@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="width" constant="32" id="96t-xq-Gyb"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.bullet.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QJj-iY-q4k">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.bullet.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QJj-iY-q4k">
                                 <rect key="frame" x="52" y="6" width="32" height="17.5"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -141,6 +141,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="commentImageView" destination="QJj-iY-q4k" id="EBz-Fp-WyF"/>
                 <outlet property="commentLabel" destination="1rJ-Na-RVy" id="f0K-TX-sF2"/>
                 <outlet property="countLabel" destination="pSF-FU-rnx" id="RMu-2S-r7Q"/>
                 <outlet property="likeImageView" destination="PtV-Tw-ibo" id="fhy-XR-a88"/>
