@@ -22,6 +22,8 @@ class Constant
     static var profile: String = "Profile"
     static var postTagVc: String = "PostTagViewController"
     static var commentVc: String = "CommentViewController"
-    static var commentTableCell = "CommentTableViewCell"
+    static var commentTableCell: String = "CommentTableViewCell"
+    static var postShareCell: String = "PostShareTableViewCell"
+    static var shareVc: String = "ShareViewController"
 }
 

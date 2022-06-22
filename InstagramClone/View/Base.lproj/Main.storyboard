@@ -165,6 +165,80 @@
             </objects>
             <point key="canvasLocation" x="-2923.1884057971015" y="2101.3392857142858"/>
         </scene>
+        <!--Share View Controller-->
+        <scene sceneID="nob-qz-HCg">
+            <objects>
+                <viewController storyboardIdentifier="ShareViewController" id="zhg-JH-nn2" customClass="ShareViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eQC-9g-t6I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZz-dV-YpU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pk1" translatesAutoresizingMaskIntoConstraints="NO" id="Db9-Jf-DuE">
+                                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="PX3-ol-IAb"/>
+                                            <constraint firstAttribute="height" constant="50" id="upD-qP-l2K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k0f-wl-atY">
+                                        <rect key="frame" x="80" y="31" width="319" height="18.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Db9-Jf-DuE" firstAttribute="top" secondItem="BZz-dV-YpU" secondAttribute="top" constant="15" id="2rh-0Q-fyO"/>
+                                    <constraint firstItem="k0f-wl-atY" firstAttribute="centerY" secondItem="Db9-Jf-DuE" secondAttribute="centerY" id="76G-7E-hhP"/>
+                                    <constraint firstAttribute="trailing" secondItem="k0f-wl-atY" secondAttribute="trailing" constant="15" id="CvY-xX-Krn"/>
+                                    <constraint firstAttribute="height" constant="80" id="lak-xX-xYp"/>
+                                    <constraint firstItem="Db9-Jf-DuE" firstAttribute="leading" secondItem="BZz-dV-YpU" secondAttribute="leading" constant="15" id="uNg-Wo-0We"/>
+                                    <constraint firstItem="k0f-wl-atY" firstAttribute="leading" secondItem="Db9-Jf-DuE" secondAttribute="trailing" constant="15" id="wAD-bi-irA"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="J0P-ea-1ed">
+                                <rect key="frame" x="0.0" y="124" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PPm-fS-kTA"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8LI-uA-8Cx">
+                                <rect key="frame" x="0.0" y="174" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zhg-JH-nn2" id="MYj-gJ-P6d"/>
+                                    <outlet property="delegate" destination="zhg-JH-nn2" id="zt3-Mz-IoN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wqF-9B-9hF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J0P-ea-1ed" firstAttribute="leading" secondItem="wqF-9B-9hF" secondAttribute="leading" id="3wQ-lD-WrK"/>
+                            <constraint firstItem="J0P-ea-1ed" firstAttribute="trailing" secondItem="wqF-9B-9hF" secondAttribute="trailing" id="9OC-gI-WR5"/>
+                            <constraint firstAttribute="bottom" secondItem="8LI-uA-8Cx" secondAttribute="bottom" id="G5W-lb-a7K"/>
+                            <constraint firstItem="BZz-dV-YpU" firstAttribute="leading" secondItem="wqF-9B-9hF" secondAttribute="leading" id="QXf-kn-reU"/>
+                            <constraint firstItem="BZz-dV-YpU" firstAttribute="trailing" secondItem="wqF-9B-9hF" secondAttribute="trailing" id="W5N-Tg-LPd"/>
+                            <constraint firstItem="BZz-dV-YpU" firstAttribute="top" secondItem="wqF-9B-9hF" secondAttribute="top" id="ZtA-Ss-Ea9"/>
+                            <constraint firstItem="8LI-uA-8Cx" firstAttribute="top" secondItem="J0P-ea-1ed" secondAttribute="bottom" id="aur-qa-Dxx"/>
+                            <constraint firstItem="J0P-ea-1ed" firstAttribute="top" secondItem="BZz-dV-YpU" secondAttribute="bottom" id="gXa-Yg-j50"/>
+                            <constraint firstItem="8LI-uA-8Cx" firstAttribute="leading" secondItem="wqF-9B-9hF" secondAttribute="leading" id="r4i-4z-g2c"/>
+                            <constraint firstItem="8LI-uA-8Cx" firstAttribute="trailing" secondItem="wqF-9B-9hF" secondAttribute="trailing" id="zlo-hS-1cW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="Db9-Jf-DuE" id="bOP-4n-alx"/>
+                        <outlet property="searchBar" destination="J0P-ea-1ed" id="Wvd-Rb-rWr"/>
+                        <outlet property="shareTableView" destination="8LI-uA-8Cx" id="ydc-s7-PLN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="At6-4s-FHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2169.5652173913045" y="2105.3571428571427"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5XN-oy-Hk6">
             <objects>

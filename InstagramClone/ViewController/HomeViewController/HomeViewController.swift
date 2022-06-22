@@ -109,19 +109,13 @@ class HomeViewController: UIViewController {
     
     @objc  func showActionSheet()
     {
-        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertController.Style.actionSheet)
+        let shareVc = storyboard?.instantiateViewController(withIdentifier: Constant
+                                                                .shareVc) as! ShareViewController
         
-        actionSheet.addAction(UIAlertAction(title: "Choose Picture", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
-//self.photoLibrary()
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Take Picture", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
-       //     self.camera()
-        }))
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
-        
-        self.present(actionSheet, animated: true, completion: nil)
-        
+        if let sheet = shareVc.sheetPresentationController {
+            sheet.detents = [ .medium(), .large()]
+        }
+        present(shareVc, animated: true, completion: nil)
     }
 }
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="PostShareTableViewCell" customModule="InstagramClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pk3" translatesAutoresizingMaskIntoConstraints="NO" id="cp0-TD-IYz">
+                        <rect key="frame" x="10" y="10" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="3l0-MO-3CQ"/>
+                            <constraint firstAttribute="width" constant="45" id="6Sf-lS-AD2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="user_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaS-aW-YMw">
+                        <rect key="frame" x="63" y="10" width="280" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="common_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfH-kK-f65">
+                        <rect key="frame" x="63" y="36" width="106" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmZ-tt-OJs">
+                        <rect key="frame" x="373" y="10" width="60" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="8Jt-iE-YyR"/>
+                        </constraints>
+                        <color key="tintColor" name="AccentColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Post"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cp0-TD-IYz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3Cv-KC-zd7"/>
+                    <constraint firstItem="IaS-aW-YMw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ckc-gQ-R8l"/>
+                    <constraint firstAttribute="bottom" secondItem="XfH-kK-f65" secondAttribute="bottom" constant="15" id="JHK-Ao-rpb"/>
+                    <constraint firstItem="QmZ-tt-OJs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TFd-02-Uo9"/>
+                    <constraint firstAttribute="trailing" secondItem="QmZ-tt-OJs" secondAttribute="trailing" constant="15" id="YPT-4K-E6z"/>
+                    <constraint firstItem="IaS-aW-YMw" firstAttribute="leading" secondItem="cp0-TD-IYz" secondAttribute="trailing" constant="8" symbolic="YES" id="gS0-EI-ZMk"/>
+                    <constraint firstItem="XfH-kK-f65" firstAttribute="top" secondItem="IaS-aW-YMw" secondAttribute="bottom" constant="5" id="rHe-Nh-gGL"/>
+                    <constraint firstItem="cp0-TD-IYz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="s4P-Zg-sF5"/>
+                    <constraint firstItem="QmZ-tt-OJs" firstAttribute="leading" secondItem="IaS-aW-YMw" secondAttribute="trailing" constant="30" id="vN0-pa-0sO"/>
+                    <constraint firstItem="XfH-kK-f65" firstAttribute="leading" secondItem="cp0-TD-IYz" secondAttribute="trailing" constant="8" symbolic="YES" id="xu4-hE-Scp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shareUserProfileImageView" destination="cp0-TD-IYz" id="5uZ-BR-edf"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pk3" width="275" height="183"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
