@@ -17,7 +17,7 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navBarButtonItem.setTitleTextAttributes([ NSAttributedString.Key.font: UIFont(name: "Arial", size: 23)!], for: UIControl.State.normal)
-        self.activityTableView.register(UINib(nibName: Constant.activityTableView, bundle: nil), forCellReuseIdentifier: Constant.activityTableView)
+        self.activityTableView.register(UINib(nibName: Constant.activityTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.activityTableViewCell)
         self.activityTableView.separatorColor = UIColor.clear
         self.activityTableView.rowHeight = UITableView.automaticDimension
     }
@@ -37,7 +37,7 @@ extension ActivityViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = activityTableView.dequeueReusableCell(withIdentifier: Constant.activityTableView, for: indexPath) as! ActivityTableViewCell
+        let cell = activityTableView.dequeueReusableCell(withIdentifier: Constant.activityTableViewCell, for: indexPath) as! ActivityTableViewCell
         return cell
     }
     

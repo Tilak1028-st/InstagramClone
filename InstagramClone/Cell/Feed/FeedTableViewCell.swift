@@ -23,12 +23,14 @@ class FeedTableViewCell: UITableViewCell {
     
     let images: [String] = ["pk1.jpeg","pk2.jpeg","pk3.jpeg","pk4.jpeg","pk5.jpeg"]
     var currentPage = 0
+    static var isPostLiked: Bool = false
     
     lazy var likeAnimator = LikeAnimator(container: contentView, layoutConstraint: likeImagewidthConstraint)
     
     lazy var doubleTapRecognizer: UITapGestureRecognizer = {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didDoubletap))
         tapRecognizer.numberOfTapsRequired = 2
+        FeedTableViewCell.isPostLiked = true
         return tapRecognizer
     }()
     
@@ -38,7 +40,7 @@ class FeedTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         self.pageController.numberOfPages = images.count
-        postCollectionView.register(UINib(nibName: Constant.postCollectionView, bundle: nil), forCellWithReuseIdentifier: Constant.postCollectionView)
+        postCollectionView.register(UINib(nibName: Constant.postCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: Constant.postCollectionViewCell)
         
         self.postCollectionView.reloadData()
         self.postCollectionView.addGestureRecognizer(doubleTapRecognizer)
@@ -53,20 +55,21 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     @objc func didTapLike(_ sender: UIGestureRecognizer) {
-        if sender.accessibilityHint == "true" {
+        if FeedTableViewCell.isPostLiked == true {
             self.heartImageView.image = UIImage(systemName: "heart.fill")
-            sender.accessibilityHint = "false"
+            FeedTableViewCell.isPostLiked = false
         }
         else {
             self.heartImageView.image = UIImage(systemName: "heart")
-            sender.accessibilityHint = "true"
+            FeedTableViewCell.isPostLiked = true
         }
     }
     
     @objc func didDoubletap() {
         likeAnimator.animate {
-            self.heartImageView.image = UIImage(systemName: "heart.fill")
             self.likeImageView.image = UIImage(systemName: "heart.fill")
+            self.heartImageView.image = UIImage(systemName: "heart.fill")
+            FeedTableViewCell.isPostLiked = false
         }
     }
 }
@@ -82,7 +85,7 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = postCollectionView.dequeueReusableCell(withReuseIdentifier: Constant.postCollectionView, for: indexPath) as! PostCollectionViewCell
+        let item = postCollectionView.dequeueReusableCell(withReuseIdentifier: Constant.postCollectionViewCell, for: indexPath) as! PostCollectionViewCell
         
         item.postImageView.image = UIImage(named: images[indexPath.item])
         return item

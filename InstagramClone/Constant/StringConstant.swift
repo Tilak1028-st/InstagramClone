@@ -10,21 +10,25 @@ import UIKit
 
 class Constant
 {
-    static var storyCollectionCell: String = "StoryCollectionViewCell"
-    static var feedTableViewCell: String = "FeedTableViewCell"
-    static var feedHeadercell: String = "FeedHeaderTableViewCell"
-    static var searchCollectionViewCell: String = "SearchCollectionViewCell"
-    static var reelTableViewCell: String = "ReelTableViewCell"
-    static var activityTableView: String = "ActivityTableViewCell"
-    static var postCollectionView: String = "PostCollectionViewCell"
-    static var storyVc: String = "StoryViewController"
     static var home: String = "Home"
     static var profile: String = "Profile"
-    static var postTagVc: String = "PostTagViewController"
-    static var commentVc: String = "CommentViewController"
+    
+    //MARK: - TableViewCell
     static var commentTableCell: String = "CommentTableViewCell"
     static var postShareCell: String = "PostShareTableViewCell"
-    static var shareVc: String = "ShareViewController"
+    static var storyCollectionCell: String = "StoryCollectionViewCell"
+    static var feedTableViewCell: String = "FeedTableViewCell"
+    static var feedHeaderCell: String = "FeedHeaderTableViewCell"
+    static var searchCollectionViewCell: String = "SearchCollectionViewCell"
+    static var reelTableViewCell: String = "ReelTableViewCell"
+    static var activityTableViewCell: String = "ActivityTableViewCell"
+    static var postCollectionViewCell: String = "PostCollectionViewCell"
+    
+    //MARK:  - ViewController
+    static var storyVc: String = "StoryViewController"
+    static var postTagVc: String = "PostTagViewController"
+    static var commentVc: String = "CommentViewController"
     static var profileVc: String = "ProfileViewController"
+    static var shareVc: String = "ShareViewController"
 }
 

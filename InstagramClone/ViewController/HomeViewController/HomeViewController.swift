@@ -80,7 +80,7 @@ class HomeViewController: UIViewController {
     {
         feedTableView.register(UINib.init(nibName: Constant.feedTableViewCell, bundle: nil), forCellReuseIdentifier: Constant.feedTableViewCell)
         
-        feedTableView.register(UINib.init(nibName: Constant.feedHeadercell, bundle: nil), forCellReuseIdentifier: Constant.feedHeadercell)
+        feedTableView.register(UINib.init(nibName: Constant.feedHeaderCell, bundle: nil), forCellReuseIdentifier: Constant.feedHeaderCell)
         
         self.feedTableView.separatorColor = UIColor.clear
         let dummyViewHeight = CGFloat(40)
@@ -104,11 +104,6 @@ class HomeViewController: UIViewController {
         navigationItem.leftBarButtonItem =  imageItem
     }
     
-    @IBAction func openStoryDropDown(_ sender: Any) {
-        
-    }
-    
-    
 }
 
 // MARK: - Extension for StoryCollectionView Delegate and Datasource methods.
@@ -125,14 +120,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = storyCollectionView.dequeueReusableCell(withReuseIdentifier: Constant.storyCollectionCell, for: indexPath) as! StoryCollectionViewCell
+        if indexPath.row == 0 {
+            item.plusImageView.isHidden = false
+        }
+        else {
+            item.plusImageView.isHidden = true
+        }
         return item
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard.init(name: Constant.home, bundle: nil)
-        let storyVc = storyboard.instantiateViewController(withIdentifier: "StoryViewController") as! StoryViewController
-        self.present(storyVc, animated: true, completion: nil)
+        let storyVc = storyboard.instantiateViewController(withIdentifier: Constant.storyVc) as! StoryViewController
         storyVc.modalPresentationStyle = .fullScreen
+        storyVc.modalTransitionStyle = .coverVertical
+        self.present(storyVc, animated: true, completion: nil)
     }
 }
 
@@ -191,7 +193,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     {
-        let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedHeadercell) as! FeedHeaderTableViewCell
+        let cell = feedTableView.dequeueReusableCell(withIdentifier: Constant.feedHeaderCell) as! FeedHeaderTableViewCell
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(openMoreOptions(_:)))
         imageTapRecognizer.numberOfTapsRequired = 1
         cell.shareImageView.addGestureRecognizer(imageTapRecognizer)
@@ -211,7 +213,7 @@ extension HomeViewController
         self.navigationController?.pushViewController(commentVc, animated: true)
     }
     
-    //MARK: - Function to share Instagram Post
+    //MARK: - Function to share Instagram Post with other user.
     @objc  func openSheetToSharePost()
     {
         let shareVc = storyboard?.instantiateViewController(withIdentifier: Constant

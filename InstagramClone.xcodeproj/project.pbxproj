@@ -48,6 +48,7 @@
 		82EAAF1728619022004AB369 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAAF1528619022004AB369 /* CommentTableViewCell.swift */; };
 		82EAAF1828619022004AB369 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EAAF1628619022004AB369 /* CommentTableViewCell.xib */; };
 		82EAAF1A2861906C004AB369 /* CollectionViewFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EAAF192861906C004AB369 /* CollectionViewFormat.swift */; };
+		82EFE3C6286343940024496A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EFE3C5286343940024496A /* UIViewControllerExtension.swift */; };
 		CFF3BBBFB27D412C65B65E30 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04EA0A2D162FDD69334EE25 /* Pods_InstagramClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		82EAAF1528619022004AB369 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		82EAAF1628619022004AB369 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		82EAAF192861906C004AB369 /* CollectionViewFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFormat.swift; sourceTree = "<group>"; };
+		82EFE3C5286343940024496A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		C04EA0A2D162FDD69334EE25 /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				8271E8FA285A0496005950B0 /* Delegate */,
+				82EFE3C42863436A0024496A /* Extension */,
 				82CE0EFC2861EBD6001BCFFB /* Model */,
 				82D6913E286082380062032B /* Parent */,
 				827E95C5285ADEB400BAEC4C /* Constant */,
@@ -380,6 +383,14 @@
 			path = Comment;
 			sourceTree = "<group>";
 		};
+		82EFE3C42863436A0024496A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82EFE3C5286343940024496A /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,6 +529,7 @@
 				8271E8E9285A0439005950B0 /* SceneDelegate.swift in Sources */,
 				827E95C7285ADED300BAEC4C /* StringConstant.swift in Sources */,
 				827E95C3285ADDA500BAEC4C /* StoryCollectionViewCell.swift in Sources */,
+				82EFE3C6286343940024496A /* UIViewControllerExtension.swift in Sources */,
 				8271E905285A0503005950B0 /* ProfileViewController.swift in Sources */,
 				82D69142286086A30062032B /* LikeAnimator.swift in Sources */,
 				8271E907285A0503005950B0 /* InstagramViewController.swift in Sources */,
