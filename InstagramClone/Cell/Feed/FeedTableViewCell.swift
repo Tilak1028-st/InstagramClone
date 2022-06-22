@@ -11,6 +11,8 @@ class FeedTableViewCell: UITableViewCell {
     
 //    weak var growingCellDelegate: GrowingCellProtocol?
     
+    @IBOutlet weak var shareImageView: UIImageView!
+    @IBOutlet weak var heartImageView: UIImageView!
     @IBOutlet weak var commentImageView: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
@@ -40,17 +42,30 @@ class FeedTableViewCell: UITableViewCell {
         
         self.postCollectionView.reloadData()
         self.postCollectionView.addGestureRecognizer(doubleTapRecognizer)
-        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapLike(_:)))
+        tapRecognizer.accessibilityHint = "true"
+        tapRecognizer.numberOfTapsRequired = 1
+        self.heartImageView.addGestureRecognizer(tapRecognizer)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-   
+    @objc func didTapLike(_ sender: UIGestureRecognizer) {
+        if sender.accessibilityHint == "true" {
+            self.heartImageView.image = UIImage(systemName: "heart.fill")
+            sender.accessibilityHint = "false"
+        }
+        else {
+            self.heartImageView.image = UIImage(systemName: "heart")
+            sender.accessibilityHint = "true"
+        }
+    }
     
     @objc func didDoubletap() {
         likeAnimator.animate {
+            self.heartImageView.image = UIImage(systemName: "heart.fill")
             self.likeImageView.image = UIImage(systemName: "heart.fill")
         }
     }

@@ -105,6 +105,22 @@ class HomeViewController: UIViewController {
         let commentVc = storyboard?.instantiateViewController(withIdentifier: Constant
                                                                 .commentVc) as! CommentViewController
         self.navigationController?.pushViewController(commentVc, animated: true)
+    }
+    
+    @objc  func showActionSheet()
+    {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertController.Style.actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Choose Picture", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
+//self.photoLibrary()
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Take Picture", style: UIAlertAction.Style.default, handler: { (alert:UIAlertAction!) -> Void in
+       //     self.camera()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
         
     }
 }
@@ -182,6 +198,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource
         labelTapRecognizer.numberOfTapsRequired = 1
         cell.commentLabel.addGestureRecognizer(labelTapRecognizer)
         cell.commentImageView.addGestureRecognizer(tapRecognizer)
+        let shareTaprecognizer = UITapGestureRecognizer(target: self, action: #selector(showActionSheet))
+        cell.shareImageView.addGestureRecognizer(shareTaprecognizer)
         return cell
     }
     

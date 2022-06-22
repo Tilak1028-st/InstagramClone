@@ -170,13 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				8271E901285A0503005950B0 /* InstagramViewController.swift */,
-				8271E8FC285A0503005950B0 /* HomeViewController.swift */,
-				8271E8FE285A0503005950B0 /* SearchViewController.swift */,
-				8271E900285A0503005950B0 /* ReelViewController.swift */,
-				8271E8FD285A0503005950B0 /* ActivityViewController.swift */,
+				82D5A0742862FB2D00687765 /* HomeViewController */,
+				82D5A0752862FB4D00687765 /* SearchViewController */,
+				82D5A0762862FB6000687765 /* ReelViewController */,
+				82D5A0772862FB6C00687765 /* ActivityViewController */,
 				824A9DD1285D880500898AD8 /* Profile ViewController */,
-				822464D3285CA65C001BE828 /* StoryViewController.swift */,
-				82D691432860A7C90062032B /* CommentViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -247,6 +245,40 @@
 				82CE0EFD2861EBF4001BCFFB /* CommentModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		82D5A0742862FB2D00687765 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8FC285A0503005950B0 /* HomeViewController.swift */,
+				822464D3285CA65C001BE828 /* StoryViewController.swift */,
+				82D691432860A7C90062032B /* CommentViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		82D5A0752862FB4D00687765 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8FE285A0503005950B0 /* SearchViewController.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		82D5A0762862FB6000687765 /* ReelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8271E900285A0503005950B0 /* ReelViewController.swift */,
+			);
+			path = ReelViewController;
+			sourceTree = "<group>";
+		};
+		82D5A0772862FB6C00687765 /* ActivityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8271E8FD285A0503005950B0 /* ActivityViewController.swift */,
+			);
+			path = ActivityViewController;
 			sourceTree = "<group>";
 		};
 		82D6913E286082380062032B /* Parent */ = {
