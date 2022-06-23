@@ -8,12 +8,6 @@
 import Foundation
 import UIKit
 
-class CommentModel
-{
-    var id: Int = 0
-}
-
-
 class CommentSection {
     var id: Int
     var comment: String
