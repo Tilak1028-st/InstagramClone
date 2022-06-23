@@ -23,6 +23,7 @@ class Constant
     static var reelTableViewCell: String = "ReelTableViewCell"
     static var activityTableViewCell: String = "ActivityTableViewCell"
     static var postCollectionViewCell: String = "PostCollectionViewCell"
+    static var loadingCell: String = "LoadingCollectionViewCell"
     
     //MARK:  - ViewController
     static var storyVc: String = "StoryViewController"
@@ -30,5 +31,8 @@ class Constant
     static var commentVc: String = "CommentViewController"
     static var profileVc: String = "ProfileViewController"
     static var shareVc: String = "ShareViewController"
+    
+    //MARK:  -Url
+    static var imageUrl: String = "https://picsum.photos/v2/list"
 }
 

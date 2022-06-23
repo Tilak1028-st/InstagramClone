@@ -1,20 +1,28 @@
 PODS:
+  - Alamofire (4.9.1)
   - DropDown (2.3.13)
+  - Kingfisher (7.1.2)
   - ScrollableSegmentedControl (1.5.0)
 
 DEPENDENCIES:
+  - Alamofire
   - DropDown (~> 2.3.13)
+  - Kingfisher (~> 7.0)
   - ScrollableSegmentedControl
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - DropDown
+    - Kingfisher
     - ScrollableSegmentedControl
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   ScrollableSegmentedControl: 2e64bbe8968a7fcd8aae5014434481464fcdfe60
 
-PODFILE CHECKSUM: 3e31c067b2c68cb3f58ac8a25f0e74eb4f510fb7
+PODFILE CHECKSUM: 4b98cc65a6b9f95bd049ec968c958a1aea7041f9
 
 COCOAPODS: 1.11.2
