@@ -19,3 +19,10 @@
     <td><img src="https://user-images.githubusercontent.com/75114840/184352951-15a0d248-06e1-458c-9f53-123b622b756e.png" width=250 height=480></td>
   </tr>
  </table>
+ 
+ * Reel Screen
+ <table>
+  <tr>
+    <td><img src="![image](https://user-images.githubusercontent.com/75114840/184353413-54a701f1-9b58-49bc-901a-99d3e49c1662.png)" width=250 height=480></td>
+  </tr>
+ </table>
