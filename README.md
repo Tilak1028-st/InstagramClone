@@ -23,6 +23,6 @@
  * Reel Screen
  <table>
   <tr>
-    <td><img src="![image](https://user-images.githubusercontent.com/75114840/184353413-54a701f1-9b58-49bc-901a-99d3e49c1662.png)" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/75114840/184353413-54a701f1-9b58-49bc-901a-99d3e49c1662.png" width=250 height=480></td>
   </tr>
  </table>
