@@ -10,3 +10,12 @@
     <td><img src="https://user-images.githubusercontent.com/75114840/184352176-945ac345-5833-46f7-9091-1ae007944b55.png" width=250 height=480></td>
   </tr>
  </table>
+ 
+  * Search Screen
+ <table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/75114840/184352490-48239c4f-834c-48ea-a842-44538a24e8f7.png" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/75114840/184352729-e22ca925-c880-46a4-8530-bdbdf549c0bf.png" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/75114840/184352951-15a0d248-06e1-458c-9f53-123b622b756e.png" width=250 height=480></td>
+  </tr>
+ </table>
