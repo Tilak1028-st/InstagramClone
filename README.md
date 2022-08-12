@@ -26,3 +26,10 @@
     <td><img src="https://user-images.githubusercontent.com/75114840/184353413-54a701f1-9b58-49bc-901a-99d3e49c1662.png" width=250 height=480></td>
   </tr>
  </table>
+ 
+ * Profile Screen
+ <table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/75114840/184353792-37866037-e4a9-40ae-b1f1-026b60dce0a4.png" width=250 height=480></td>
+  </tr>
+ </table>
